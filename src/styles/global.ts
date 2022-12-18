@@ -8,12 +8,12 @@ export const globalStyles = globalCss({
 
   body: {
     // backgroundColor: "",
-    // color: "",
+    color: "$gray700",
     "-webkit-font-smoothing": "antialiased",
   },
 
   "body, input, textarea, button": {
-    // fontFamily: "",
+    fontFamily: "DM Sans",
     fontWeight: 400,
   },
 });
