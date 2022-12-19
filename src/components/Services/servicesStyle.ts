@@ -3,7 +3,7 @@ import { styled } from "../../styles/index";
 export const ServicesSection = styled("section", {
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "$brandBlue300",
+  backgroundColor: "$brandBlue200",
   justifyContent: "center",
   alignItems: "center",
   padding: "2.5rem",
@@ -45,11 +45,11 @@ export const ServicesCard = styled("header", {
   },
   p: {
     textAlign: "left",
+    fontSize: "1.2rem",
   },
   img: {
     alignItems: "left",
     marginBottom: "0.5rem",
     paddingBottom: "0.3rem",
-    color: "blue",
   },
 });

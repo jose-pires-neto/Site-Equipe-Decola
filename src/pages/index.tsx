@@ -1,5 +1,4 @@
-import Image from "next/image";
-import logo from "../assets/logo.svg";
+import About from "../components/AboutUs/about";
 import Services from "../components/Services/service";
 
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
 
         <Services />
 
-        <section>
+        {/* <section>
           <Image alt="abut-me" src={logo} width={500} height={500} />
           <h2>Entenda quem somos e por que existimos.</h2>
           <p>
@@ -37,7 +36,8 @@ export default function Home() {
             marketing de alta qualidade que ajudam nossos clientes a atingir
             seus objetivos de negócios e crescer.
           </p>
-        </section>
+        </section> */}
+        <About />
 
         <section>
           <h2>Entre em contato com a gente!</h2>
