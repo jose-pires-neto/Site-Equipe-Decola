@@ -1,10 +1,6 @@
 import Image from "next/image";
 import logo from "../assets/logo.svg";
-import {
-  ServicesSection,
-  Services,
-  ServicesCard,
-} from "../components/servicesCard";
+import Services from "../components/Services/service";
 
 export default function Home() {
   return (
@@ -25,53 +21,7 @@ export default function Home() {
           <div>Meses no mercado</div>
         </section>
 
-        <ServicesSection>
-          <h2>Como podemos ajudar no seu negócio?</h2>
-          <Services>
-            <ServicesCard>
-              <h3>Consultoria de Marketing</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-            <ServicesCard>
-              <h3>Landing Page</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-            <ServicesCard>
-              <h3>Criação de sites/blog</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-            <ServicesCard>
-              <h3>Social Media</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-            <ServicesCard>
-              <h3>Tráfego Pago</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-            <ServicesCard>
-              <h3>Produção de conteúdo</h3>
-              <p>
-                A consultoria de marketing ajuda a desenvolver uma estratégia de
-                marketing eficaz. de a ajudar os clientes.
-              </p>
-            </ServicesCard>
-          </Services>
-        </ServicesSection>
+        <Services />
 
         <section>
           <Image alt="abut-me" src={logo} width={500} height={500} />

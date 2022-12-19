@@ -1,4 +1,4 @@
-import { styled } from "../styles/index";
+import { styled } from "../../styles/index";
 
 export const ServicesSection = styled("section", {
   display: "flex",
@@ -16,7 +16,7 @@ export const ServicesSection = styled("section", {
   },
 });
 
-export const Services = styled("div", {
+export const ServicesField = styled("div", {
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
