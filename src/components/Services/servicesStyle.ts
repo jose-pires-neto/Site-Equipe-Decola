@@ -46,4 +46,10 @@ export const ServicesCard = styled("header", {
   p: {
     textAlign: "left",
   },
+  img: {
+    alignItems: "left",
+    marginBottom: "0.5rem",
+    paddingBottom: "0.3rem",
+    color: "blue",
+  },
 });
