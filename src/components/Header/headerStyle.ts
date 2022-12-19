@@ -1,12 +1,18 @@
 import { styled } from "../../styles/index";
 
 export const HeaderStyle = styled("header", {
-  display: "flex",
   backgroundColor: "$brandBlue300",
-  justifyContent: "space-between",
-  alignItems: "center",
-  height: "4.5rem",
-  padding: "0 2rem",
+  display: "flex",
+  justifyContent: "center",
+
+  div: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "4.5rem",
+    padding: "0 2rem",
+    width: "90%",
+  },
 });
 
 export const Navbar = styled("nav", {
@@ -14,6 +20,10 @@ export const Navbar = styled("nav", {
   listStyleType: "none",
   gap: "0 2rem",
   color: "$brandBlue800",
+
+  "@tablet": {
+    display: "none",
+  },
 });
 
 export const Button = styled("button", {
@@ -23,4 +33,8 @@ export const Button = styled("button", {
   cursor: "pointer",
   color: "$brandBlue800",
   padding: "0.625rem 1.5rem",
+
+  "@tablet": {
+    display: "none",
+  },
 });

@@ -23,4 +23,7 @@ export const {
       brandBlue200: "#F0F8FF",
     },
   },
+  media: {
+    tablet: "(max-width: 820px)",
+  },
 });

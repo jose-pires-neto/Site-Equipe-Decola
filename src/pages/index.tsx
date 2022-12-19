@@ -74,7 +74,7 @@ export default function Home() {
         </ServicesSection>
 
         <section>
-          <Image alt="abut-me" src={logo} width={500} height={500} />
+          {/* <Image alt="abut-me" src={logo} width={500} height={500} /> */}
           <h2>Entenda quem somos e por que existimos.</h2>
           <p>
             Somos a Equipe Decola. Uma empresa especializada em serviços de
