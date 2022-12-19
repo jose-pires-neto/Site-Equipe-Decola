@@ -8,4 +8,5 @@ export const Wrapper = styled("div", {
 
 export const Header = styled("header", {
   display: "flex",
+  backgroundColor: "blue",
 });
