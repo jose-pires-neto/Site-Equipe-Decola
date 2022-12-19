@@ -26,7 +26,7 @@ export default function Home() {
         </section>
 
         <ServicesSection>
-          <h2>Como podemos ajudá-lo no seu negócio?</h2>
+          <h2>Como podemos ajudar no seu negócio?</h2>
           <Services>
             <ServicesCard>
               <h3>Consultoria de Marketing</h3>

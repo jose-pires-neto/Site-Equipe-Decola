@@ -1,15 +1,18 @@
-import { styled } from "@stitches/react";
+import { styled } from "../styles/index";
 
 export const ServicesSection = styled("section", {
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "#DBEEFF",
+  backgroundColor: "$brandBlue300",
   justifyContent: "center",
   alignItems: "center",
   padding: "2.5rem",
   h2: {
-    fontSize: "3.125rem",
-    margin: "4.375rem",
+    fontSize: "3rem",
+    marginTop: "13rem",
+    textAlign: "center",
+    width: "40rem",
+    fontFamily: "Orbitron",
   },
 });
 
@@ -19,13 +22,14 @@ export const Services = styled("div", {
   flexWrap: "wrap",
   maxWidth: "80rem",
   gap: "1em",
-  // border: "1px solid",
+  marginTop: "3rem",
+  marginBottom: "10rem",
 });
 
 export const ServicesCard = styled("header", {
   width: "18rem",
   height: "40%",
-  border: "1px solid #B9F2FF",
+  border: "1px solid $brandBlue400",
   borderRadius: "0.375rem",
   padding: "1.5rem",
   display: "flex",
@@ -33,10 +37,11 @@ export const ServicesCard = styled("header", {
   alignItems: "flex-start",
   justifyContent: "center",
   margin: "0.5rem",
-  backgroundColor: "#FFFFFF",
+  backgroundColor: "$white",
   h3: {
     marginBottom: "1rem",
     fontSize: "1.125rem",
+    fontFamily: "Orbitron",
   },
   p: {
     textAlign: "left",
