@@ -6,26 +6,39 @@ export const ServicesSection = styled("section", {
   backgroundColor: "#DBEEFF",
   justifyContent: "center",
   alignItems: "center",
-  padding: "40px",
+  padding: "2.5rem",
+  h2: {
+    fontSize: "3.125rem",
+    margin: "4.375rem",
+  },
 });
 
 export const Services = styled("div", {
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "center",
   flexWrap: "wrap",
-  width: "80%",
+  maxWidth: "80rem",
+  gap: "1em",
+  // border: "1px solid",
 });
 
 export const ServicesCard = styled("header", {
-  width: "320px",
-  height: "150px",
+  width: "18rem",
+  height: "40%",
   border: "1px solid #B9F2FF",
-  borderRadius: "6px",
-  padding: "24px",
+  borderRadius: "0.375rem",
+  padding: "1.5rem",
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
   justifyContent: "center",
-  margin: "8px",
+  margin: "0.5rem",
   backgroundColor: "#FFFFFF",
+  h3: {
+    marginBottom: "1rem",
+    fontSize: "1.125rem",
+  },
+  p: {
+    textAlign: "left",
+  },
 });
