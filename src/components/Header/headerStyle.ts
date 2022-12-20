@@ -16,6 +16,32 @@ export const Container = styled("div", {
 });
 
 export const Navbar = styled("nav", {
+  variants: {
+    isHidden: {
+      true: {},
+      false: {
+        color: "$white",
+
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "2rem 0",
+
+        marginTop: "40rem",
+        height: "60vh",
+        width: "100%",
+
+        zIndex: 12,
+
+        li: {
+          fontSize: "1.6rem",
+          fontWeight: "bold",
+        },
+      },
+    },
+  },
+
   display: "flex",
   listStyleType: "none",
   gap: "0 2rem",
@@ -51,6 +77,7 @@ export const Menu = styled("section", {
         width: "100vw",
 
         backgroundColor: "$brandBlue800",
+        zIndex: 10,
       },
       hidden: {},
     },
@@ -68,12 +95,10 @@ export const Hamburger = styled("div", {
     width: "30px",
     height: "30px",
     marginRight: "10px",
+    position: "absolute",
+    right: 48,
+    top: 14,
 
-    div: {
-      backgroundColor: "$white",
-      height: "5px",
-      width: "100%",
-      margin: "6px auto",
-    },
+    zIndex: 90,
   },
 });

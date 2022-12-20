@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Turn } from "hamburger-react";
 import Image from "next/image";
 import logo from "../../assets/logo.svg";
 import {
@@ -15,22 +16,17 @@ export function Header() {
   return (
     <HeaderStyle>
       <Container>
-        <Image src={logo} alt="Logo da Equipe Decola" />
-        <Navbar>
+        {!menuOn && <Image src={logo} alt="Logo da Equipe Decola" />}
+        <Navbar isHidden={menuOn ? "false" : "true"}>
           <li>Início</li>
           <li>Sobre</li>
           <li>Serviços</li>
           <li>Depoimentos</li>
         </Navbar>
         <Button type="button">FAÇA O SEU ORÇAMENTO</Button>
-        <Menu
-          Appearance={menuOn ? "fullScreen" : "hidden"}
-          onClick={() => setMenuOn(!menuOn)}
-        >
-          <Hamburger>
-            <div></div>
-            <div></div>
-            <div></div>
+        <Menu Appearance={menuOn ? "fullScreen" : "hidden"}>
+          <Hamburger onClick={() => setMenuOn(!menuOn)}>
+            <Turn color="#FFFFFF" />
           </Hamburger>
         </Menu>
       </Container>
