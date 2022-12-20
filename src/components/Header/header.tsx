@@ -15,6 +15,7 @@ import {
   Hamburger,
   Container,
   Footer,
+  ButtonMenu,
 } from "./headerStyle";
 
 export function Header() {
@@ -34,11 +35,18 @@ export function Header() {
           <Hamburger onClick={() => setMenuOn(!menuOn)}>
             <Turn color="#FFFFFF" />
           </Hamburger>
-          <Footer>
-            <Image src={instagramIcon} alt="Instagram Icon" />
-            <Image src={facebookIcon} alt="Facebook Icon" />
-            <Image src={youtubeIcon} alt="Youtube Icon" />
-          </Footer>
+
+          {menuOn && (
+            <>
+              <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
+
+              <Footer>
+                <Image src={instagramIcon} alt="Instagram Icon" />
+                <Image src={facebookIcon} alt="Facebook Icon" />
+                <Image src={youtubeIcon} alt="Youtube Icon" />
+              </Footer>
+            </>
+          )}
         </Menu>
       </Container>
     </HeaderStyle>

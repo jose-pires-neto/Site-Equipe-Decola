@@ -73,6 +73,7 @@ export const Menu = styled("section", {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-end",
+        gap: "4rem 0",
 
         position: "absolute",
         top: 0,
@@ -106,6 +107,14 @@ export const Hamburger = styled("div", {
 
     zIndex: 90,
   },
+});
+
+export const ButtonMenu = styled("button", {
+  borderRadius: "40px",
+  border: "none",
+  cursor: "pointer",
+  color: "$brandBlue800",
+  padding: "0.625rem 1.5rem",
 });
 
 export const Footer = styled("footer", {
