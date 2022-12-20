@@ -1,4 +1,5 @@
 import About from "../components/AboutUs/about";
+import Contact from "../components/Contact/contact";
 import Services from "../components/Services/service";
 
 export default function Home() {
@@ -21,30 +22,8 @@ export default function Home() {
         </section>
 
         <Services />
-
-        {/* <section>
-          <Image alt="abut-me" src={logo} width={500} height={500} />
-          <h2>Entenda quem somos e por que existimos.</h2>
-          <p>
-            Somos a Equipe Decola. Uma empresa especializada em serviços de
-            marketing, melhorando os resultados dos negócios com planos e
-            estratégias personalizadas de acordo com o perfil de cada empresa
-          </p>
-          <p>
-            Acreditamos que o sucesso do nosso negócio depende do sucesso de
-            nossos clientes. Por isso, nos dedicamos a fornecer soluções de
-            marketing de alta qualidade que ajudam nossos clientes a atingir
-            seus objetivos de negócios e crescer.
-          </p>
-        </section> */}
         <About />
-
-        <section>
-          <h2>Entre em contato com a gente!</h2>
-          <p>Paragominas - PA</p>
-          <p>equipedecola.adm@gmail.com</p>
-          <button type="button">Faça o seu orçamento</button>
-        </section>
+        <Contact />
       </main>
     </>
   );

@@ -1,6 +1,5 @@
 import { AboutSection, AboutContent } from "./aboutStyle";
 import Image from "next/image";
-// import logo from "../../assets/logo.svg";
 import AboutImage from "../../assets/AboutImage.svg";
 
 export default function About() {
