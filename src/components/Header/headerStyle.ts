@@ -73,7 +73,7 @@ export const Menu = styled("section", {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-end",
-        gap: "4rem 0",
+        gap: "5rem 0",
 
         position: "absolute",
         top: 0,
