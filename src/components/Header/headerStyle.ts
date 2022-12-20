@@ -21,7 +21,6 @@ export const Navbar = styled("nav", {
       true: {},
       false: {
         color: "$white",
-
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -35,6 +34,7 @@ export const Navbar = styled("nav", {
         zIndex: 12,
 
         li: {
+          paddingLeft: "1.13rem",
           fontSize: "1.6rem",
           fontWeight: "bold",
         },
@@ -69,6 +69,11 @@ export const Menu = styled("section", {
   variants: {
     Appearance: {
       fullScreen: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-end",
+
         position: "absolute",
         top: 0,
         left: 0,
@@ -101,4 +106,10 @@ export const Hamburger = styled("div", {
 
     zIndex: 90,
   },
+});
+
+export const Footer = styled("footer", {
+  display: "flex",
+  gap: "0 1.8rem",
+  paddingBottom: "6rem",
 });

@@ -1,7 +1,12 @@
 import { useState } from "react";
-import { Turn } from "hamburger-react";
 import Image from "next/image";
+
+import { Turn } from "hamburger-react";
 import logo from "../../assets/logo.svg";
+import instagramIcon from "../../assets/instagram 1.svg";
+import facebookIcon from "../../assets/facebook 1.svg";
+import youtubeIcon from "../../assets/youtube 1.svg";
+
 import {
   HeaderStyle,
   Navbar,
@@ -9,6 +14,7 @@ import {
   Menu,
   Hamburger,
   Container,
+  Footer,
 } from "./headerStyle";
 
 export function Header() {
@@ -28,6 +34,11 @@ export function Header() {
           <Hamburger onClick={() => setMenuOn(!menuOn)}>
             <Turn color="#FFFFFF" />
           </Hamburger>
+          <Footer>
+            <Image src={instagramIcon} alt="Instagram Icon" />
+            <Image src={facebookIcon} alt="Facebook Icon" />
+            <Image src={youtubeIcon} alt="Youtube Icon" />
+          </Footer>
         </Menu>
       </Container>
     </HeaderStyle>
