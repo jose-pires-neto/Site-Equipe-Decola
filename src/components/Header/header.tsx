@@ -1,11 +1,20 @@
+import { useState } from "react";
 import Image from "next/image";
 import logo from "../../assets/logo.svg";
-import { HeaderStyle, Navbar, Button } from "./headerStyle";
+import {
+  HeaderStyle,
+  Navbar,
+  Button,
+  Menu,
+  Hamburger,
+  Container,
+} from "./headerStyle";
 
 export function Header() {
+  const [menuOn, setMenuOn] = useState(false);
   return (
     <HeaderStyle>
-      <div>
+      <Container>
         <Image src={logo} alt="Logo da Equipe Decola" />
         <Navbar>
           <li>Início</li>
@@ -14,7 +23,17 @@ export function Header() {
           <li>Depoimentos</li>
         </Navbar>
         <Button type="button">FAÇA O SEU ORÇAMENTO</Button>
-      </div>
+        <Menu
+          Appearance={menuOn ? "fullScreen" : "hidden"}
+          onClick={() => setMenuOn(!menuOn)}
+        >
+          <Hamburger>
+            <div></div>
+            <div></div>
+            <div></div>
+          </Hamburger>
+        </Menu>
+      </Container>
     </HeaderStyle>
   );
 }
