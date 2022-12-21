@@ -24,6 +24,9 @@ export const {
     },
   },
   media: {
+    mobile: "(max-width: 376px)",
     tablet: "(max-width: 820px)",
+    laptopTab: "(max-width: 975px)",
+    laptop: "(max-width: 1270px)",
   },
 });

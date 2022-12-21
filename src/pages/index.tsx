@@ -6,22 +6,22 @@ export default function Home() {
   return (
     <>
       <main>
-        <section>
+        {/* <section>
           <h1>Marketing simplicado para a sua empresa</h1>
           <p>
             Os serviços da Equipe Decola vão além do marketing, traçamos as
             melhores estratégias para garantir o crescimento de longo prazo do
             seu negócio.
           </p>
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
           <div>Clientes atentidos</div>
           <div>Trabalhos concluídos</div>
           <div>Meses no mercado</div>
-        </section>
-        <Services />
-        <About />
+        </section> */}
+        {/* <Services /> */}
+        {/* <About /> */}
         <Contact />
       </main>
     </>

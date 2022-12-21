@@ -3,14 +3,43 @@ import { styled } from "../../styles/index";
 export const ContactSection = styled("section", {
   display: "flex",
   backgroundColor: "$brandBlue200",
-  justifyContent: "center",
+  justifyContent: "space-around",
   alignItems: "center",
   padding: "1rem",
   height: "43.6875rem",
-  gap: "15rem",
+
   img: {
-    width: "37.5625rem",
-    height: "34rem",
+    maxWidth: "36rem",
+    maxHeight: "34rem",
+  },
+
+  "@laptop": {
+    padding: "1rem 4rem",
+
+    img: {
+      width: "28rem",
+      height: "24rem",
+    },
+  },
+
+  "@laptopTab": {
+    img: {
+      width: "24rem",
+      height: "20rem",
+    },
+  },
+
+  "@tablet": {
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  "@mobile": {
+    img: {
+      width: "20rem",
+      height: "16rem",
+    },
   },
 });
 
@@ -21,7 +50,8 @@ export const ContactContent = styled("div", {
   alignItems: "left",
   width: "35rem",
   height: "19rem",
-  padding: "1.5rem",
+  padding: "1.5rem 0",
+
   h2: {
     fontSize: "2.6rem",
     textAlign: "left",
@@ -30,6 +60,7 @@ export const ContactContent = styled("div", {
     fontFamily: "Orbitron",
     marginBottom: "1.7rem",
   },
+
   button: {
     display: "flex",
     width: "18rem",
@@ -49,8 +80,32 @@ export const ContactContent = styled("div", {
       height: "1.6rem",
     },
   },
+
   p: {
     marginTop: "0.1rem",
     marginBottom: "0.8rem",
+  },
+
+  "@laptopTab": {
+    width: "30rem",
+
+    h2: {
+      width: "26rem",
+      fontSize: "2rem",
+    },
+  },
+
+  "@tablet": {
+    width: "26rem",
+    justifyContent: "center",
+    alignItems: "center",
+
+    h2: {
+      width: "20rem",
+    },
+  },
+
+  "@mobile": {
+    width: "22rem",
   },
 });
