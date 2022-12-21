@@ -21,20 +21,16 @@ export const Navbar = styled("nav", {
       true: {},
       false: {
         color: "$white",
+        textAlign: "center",
+
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: "2rem 0",
+        gap: "3rem 0",
 
-        marginTop: "40rem",
-        height: "60vh",
-        width: "100%",
-
-        zIndex: 12,
-
+        height: "70vh",
         li: {
-          paddingLeft: "1.13rem",
           fontSize: "1.6rem",
           fontWeight: "bold",
         },
@@ -69,12 +65,6 @@ export const Menu = styled("section", {
   variants: {
     Appearance: {
       fullScreen: {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "flex-end",
-        gap: "5rem 0",
-
         position: "absolute",
         top: 0,
         left: 0,
@@ -83,7 +73,10 @@ export const Menu = styled("section", {
         width: "100vw",
 
         backgroundColor: "$brandBlue800",
-        zIndex: 10,
+
+        img: {
+          padding: "0.4rem 2rem",
+        },
       },
       hidden: {},
     },
@@ -114,11 +107,10 @@ export const ButtonMenu = styled("button", {
   border: "none",
   cursor: "pointer",
   color: "$brandBlue800",
-  padding: "0.625rem 1.5rem",
+  padding: "1rem 2rem",
 });
 
 export const Footer = styled("footer", {
   display: "flex",
-  gap: "0 1.8rem",
-  paddingBottom: "6rem",
+  justifyContent: "center",
 });
