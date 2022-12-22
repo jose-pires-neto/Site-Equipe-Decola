@@ -20,7 +20,7 @@ export default function Home() {
           <div>Trabalhos concluídos</div>
           <div>Meses no mercado</div>
         </section> */}
-        {/* <Services /> */}
+        <Services />
         <About />
         <Contact />
       </main>
