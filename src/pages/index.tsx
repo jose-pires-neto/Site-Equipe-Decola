@@ -21,7 +21,7 @@ export default function Home() {
           <div>Meses no mercado</div>
         </section> */}
         <Services />
-        {/* <About /> */}
+        <About />
         <Contact />
       </main>
     </>

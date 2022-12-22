@@ -3,7 +3,7 @@ import { styled } from "../../styles/index";
 export const ContactSection = styled("section", {
   display: "flex",
   backgroundColor: "$brandBlue200",
-  justifyContent: "space-around",
+  justifyContent: "space-evenly",
   alignItems: "center",
   padding: "1rem",
   height: "43.6875rem",
@@ -56,7 +56,6 @@ export const ContactContent = styled("div", {
     fontSize: "2.6rem",
     textAlign: "left",
     width: "32rem",
-    justifyContent: "left",
     fontFamily: "Orbitron",
     marginBottom: "1.7rem",
   },
@@ -105,7 +104,7 @@ export const ContactContent = styled("div", {
   },
 
   "@tablet": {
-    width: "26rem",
+    width: "22rem",
     justifyContent: "center",
     alignItems: "center",
 

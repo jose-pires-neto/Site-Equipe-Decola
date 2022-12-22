@@ -33,7 +33,7 @@ export const ServicesField = styled("div", {
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
-  maxWidth: "90vw",
+  maxWidth: "85vw",
   gap: "2.5rem 2rem",
   marginTop: "3rem",
   marginBottom: "10rem",
