@@ -30,15 +30,19 @@ export const ContactSection = styled("section", {
   },
 
   "@tablet": {
-    flexDirection: "column",
+    flexDirection: "column-reverse",
     alignItems: "center",
     justifyContent: "center",
+    img: {
+      width: "22rem",
+      height: "20rem",
+    },
   },
 
   "@mobile": {
     img: {
       width: "20rem",
-      height: "16rem",
+      height: "18rem",
     },
   },
 });

@@ -18,6 +18,17 @@ export const FooterContent = styled("footer", {
     alignItems: "flex-start",
     padding: "0.5rem 0.3rem",
   },
+
+  "@largeMobile": {
+    flexDirection: "column",
+    height: "20rem",
+    alignItems: "flex-start",
+    padding: "0.5rem 0.3rem",
+  },
+
+  "@tablet": {
+    height: "16rem",
+  },
 });
 
 export const LogoAndCopyright = styled("div", {
