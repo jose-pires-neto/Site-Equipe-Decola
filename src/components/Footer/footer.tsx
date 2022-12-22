@@ -5,9 +5,9 @@ import {
 } from "./footerStyle";
 import Image from "next/image";
 import LogoDecola from "../../assets/logo-branca.svg";
-import instagramIcon from "../../assets/instagram 1.svg";
-import facebookIcon from "../../assets/facebook 1.svg";
-import youtubeIcon from "../../assets/youtube 1.svg";
+import instagramIcon from "../../assets/icons/instagram.svg";
+import facebookIcon from "../../assets/icons/facebook.svg";
+import youtubeIcon from "../../assets/icons/youtube.svg";
 
 export default function Footer() {
   return (
