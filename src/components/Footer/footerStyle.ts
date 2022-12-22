@@ -16,7 +16,7 @@ export const FooterContent = styled("footer", {
     flexDirection: "column",
     height: "16rem",
     alignItems: "flex-start",
-    padding: "1rem",
+    padding: "0.5rem 0.3rem",
   },
 });
 
