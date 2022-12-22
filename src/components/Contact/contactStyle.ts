@@ -81,9 +81,18 @@ export const ContactContent = styled("div", {
     },
   },
 
-  p: {
-    marginTop: "0.1rem",
-    marginBottom: "0.8rem",
+  div: {
+    display: "flex",
+    alignItems: "center",
+    img: {
+      width: "1.6rem",
+      height: "1.6rem",
+    },
+
+    p: {
+      padding: "1rem 0.6rem",
+      fontSize: "1rem",
+    },
   },
 
   "@laptopTab": {

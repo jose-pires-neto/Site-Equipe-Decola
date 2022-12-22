@@ -9,10 +9,23 @@ export const ServicesSection = styled("section", {
   padding: "2.5rem",
   h2: {
     fontSize: "3rem",
-    marginTop: "13rem",
+    paddingTop: "13rem",
     textAlign: "center",
-    width: "40rem",
+    maxWidth: "40rem",
     fontFamily: "Orbitron",
+  },
+
+  "@tablet": {
+    h2: {
+      maxWidth: "33rem",
+      fontSize: "2.5rem",
+    },
+  },
+
+  "@mobile": {
+    h2: {
+      fontSize: "2rem",
+    },
   },
 });
 
@@ -20,15 +33,15 @@ export const ServicesField = styled("div", {
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
-  maxWidth: "80rem",
-  gap: "1em",
+  maxWidth: "90vw",
+  gap: "2.5rem 2rem",
   marginTop: "3rem",
   marginBottom: "10rem",
 });
 
 export const ServicesCard = styled("header", {
-  width: "18rem",
-  height: "40%",
+  width: "22rem",
+  height: "13rem",
   border: "1px solid $brandBlue400",
   borderRadius: "0.375rem",
   padding: "1.5rem",
@@ -36,20 +49,29 @@ export const ServicesCard = styled("header", {
   flexDirection: "column",
   alignItems: "flex-start",
   justifyContent: "center",
-  margin: "0.5rem",
   backgroundColor: "$white",
   h3: {
     marginBottom: "1rem",
-    fontSize: "1.125rem",
+    fontSize: "1.3rem",
     fontFamily: "Orbitron",
   },
   p: {
     textAlign: "left",
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
   },
   img: {
     alignItems: "left",
     marginBottom: "0.5rem",
     paddingBottom: "0.3rem",
+  },
+
+  "@mobile": {
+    width: "16rem",
+    h3: {
+      fontSize: "1rem",
+    },
+    p: {
+      fontSize: "1rem",
+    },
   },
 });
