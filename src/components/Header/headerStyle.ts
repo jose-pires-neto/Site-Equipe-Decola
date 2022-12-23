@@ -4,6 +4,17 @@ export const HeaderStyle = styled("header", {
   backgroundColor: "$brandBlue300",
   display: "flex",
   justifyContent: "center",
+  a: {
+    textDecoration: "none",
+    color: "inherit",
+    ":hover": {
+      textDecoration: "underline",
+    },
+  },
+  position: "fixed",
+  width: "100vw",
+  zIndex: "99",
+  padding: "0.4rem 0",
 });
 
 export const Container = styled("div", {

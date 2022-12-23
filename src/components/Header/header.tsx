@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Turn } from "hamburger-react";
+import Link from "next/link";
 
 import logo from "../../assets/logo.svg";
 import whiteLogo from "../../assets/logo-branca.svg";
@@ -27,9 +28,15 @@ export function Header() {
       <Container>
         <Image src={logo} alt="Logo da Equipe Decola" />
         <Navbar isHidden={menuOn ? "false" : "true"}>
-          <li>Início</li>
-          <li>Sobre</li>
-          <li>Serviços</li>
+          <Link href="/">
+            <li>Início</li>
+          </Link>
+          <Link href="#about">
+            <li>Sobre</li>
+          </Link>
+          <Link href="#services">
+            <li>Serviços</li>
+          </Link>
           <li>Depoimentos</li>
         </Navbar>
         <Button type="button">FAÇA O SEU ORÇAMENTO</Button>
@@ -43,7 +50,9 @@ export function Header() {
               <Navbar isHidden="false">
                 <li>Início</li>
                 <li>Sobre</li>
-                <li>Serviços</li>
+                <Link href="#service">
+                  <li>Serviços</li>
+                </Link>
                 <li>Depoimentos</li>
                 <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
                 <Footer>
