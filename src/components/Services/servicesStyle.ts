@@ -7,13 +7,13 @@ export const ServicesSection = styled("section", {
   justifyContent: "center",
   alignItems: "center",
   padding: "2.5rem",
+  paddingTop: "13rem",
   a: {
     textDecoration: "none",
     color: "inherit",
   },
   h2: {
     fontSize: "3rem",
-    paddingTop: "13rem",
     textAlign: "center",
     maxWidth: "40rem",
     fontFamily: "Orbitron",
@@ -30,6 +30,14 @@ export const ServicesSection = styled("section", {
     h2: {
       fontSize: "2rem",
     },
+    paddingTop: "25rem",
+  },
+
+  "@largeMobile": {
+    h2: {
+      fontSize: "2rem",
+    },
+    paddingTop: "25rem",
   },
 });
 
