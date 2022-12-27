@@ -6,20 +6,25 @@ import code from "../../assets/icons/SiteIcon.svg";
 import presentation from "../../assets/icons/CriacaoDeConteudoIcon.svg";
 import strategy from "../../assets/icons/IdentidadeVisualIcon.svg";
 import thumbsUp from "../../assets/icons/SocialMediaIcon.svg";
+import Link from "next/link";
 
 export default function Services() {
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <h2>Como podemos ajudar no seu negócio?</h2>
       <ServicesField>
-        <ServicesCard>
-          <Image src={bulb} alt="logo-bulb" />
-          <h3>Consultoria de Marketing</h3>
-          <p>
-          A consultoria de marketing ajuda as empresas a atingir 
-          objetivos de negócios, como atrair novos clientes e fortalecer a sua marca.
-          </p>
-        </ServicesCard>
+
+        <Link href="/services/marketing">
+          <ServicesCard>
+            <Image src={bulb} alt="logo-bulb" />
+            <h3>Consultoria de Marketing</h3>
+            <p>
+              A consultoria de marketing ajuda a desenvolver uma estratégia de
+              marketing eficaz. de a ajudar os clientes.
+            </p>
+          </ServicesCard>
+        </Link>
+
         <ServicesCard>
           <Image src={browser} alt="logo-browser" />
           <h3>Landing Page</h3>

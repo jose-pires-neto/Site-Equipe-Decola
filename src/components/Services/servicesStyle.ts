@@ -7,9 +7,13 @@ export const ServicesSection = styled("section", {
   justifyContent: "center",
   alignItems: "center",
   padding: "2.5rem",
+  paddingTop: "13rem",
+  a: {
+    textDecoration: "none",
+    color: "inherit",
+  },
   h2: {
     fontSize: "3rem",
-    paddingTop: "13rem",
     textAlign: "center",
     maxWidth: "40rem",
     fontFamily: "Orbitron",
@@ -26,6 +30,14 @@ export const ServicesSection = styled("section", {
     h2: {
       fontSize: "2rem",
     },
+    paddingTop: "25rem",
+  },
+
+  "@largeMobile": {
+    h2: {
+      fontSize: "2rem",
+    },
+    paddingTop: "25rem",
   },
 });
 
@@ -40,7 +52,7 @@ export const ServicesField = styled("div", {
 });
 
 export const ServicesCard = styled("header", {
-  width: "22rem",
+  maxWidth: "22rem",
   height: "13rem",
   border: "1px solid $brandBlue400",
   borderRadius: "0.375rem",

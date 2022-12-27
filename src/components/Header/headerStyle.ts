@@ -1,9 +1,56 @@
 import { styled } from "../../styles/index";
 
 export const HeaderStyle = styled("header", {
-  backgroundColor: "$brandBlue300",
-  display: "flex",
-  justifyContent: "center",
+  variants: {
+    color: {
+      BrandBlue: {
+        backgroundColor: "$brandBlue800",
+        display: "flex",
+        justifyContent: "center",
+
+        a: {
+          textDecoration: "none",
+          color: "$white",
+          ":hover": {
+            textDecoration: "underline",
+          },
+        },
+
+        position: "fixed",
+        width: "100vw",
+        zIndex: "99",
+        padding: "0.4rem 0",
+
+        li: {
+          color: "$white",
+        },
+        button: {
+          color: "$white",
+        },
+        img: {
+          color: "$white",
+        },
+      },
+      Blue: {
+        backgroundColor: "$brandBlue300",
+        display: "flex",
+        justifyContent: "center",
+
+        a: {
+          textDecoration: "none",
+          color: "inherit",
+          ":hover": {
+            textDecoration: "underline",
+          },
+        },
+
+        position: "fixed",
+        width: "100vw",
+        zIndex: "99",
+        padding: "0.4rem 0",
+      },
+    },
+  },
 });
 
 export const Container = styled("div", {
@@ -58,6 +105,17 @@ export const Button = styled("button", {
 
   "@tablet": {
     display: "none",
+  },
+
+  variants: {
+    color: {
+      BrandBlue: {
+        borderColor: "$brandBlue800",
+      },
+      White: {
+        borderColor: "$white",
+      },
+    },
   },
 });
 

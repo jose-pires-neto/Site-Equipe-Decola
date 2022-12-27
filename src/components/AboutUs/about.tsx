@@ -4,7 +4,7 @@ import AboutImage from "../../assets/AboutImage.svg";
 
 export default function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <Image alt="abut-me" src={AboutImage} />
       <AboutContent>
         <h2>Entenda quem somos e por que existimos.</h2>

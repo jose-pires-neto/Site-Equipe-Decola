@@ -1,11 +1,14 @@
 import About from "../components/AboutUs/about";
 import Contact from "../components/Contact/contact";
+import Hero from "../components/Hero/hero";
 import Services from "../components/Services/service";
+import Info from "../components/Info/info";
 
 export default function Home() {
   return (
     <>
       <main>
+        <Hero />
         {/* <section>
           <h1>Marketing simplicado para a sua empresa</h1>
           <p>
@@ -20,6 +23,7 @@ export default function Home() {
           <div>Trabalhos concluídos</div>
           <div>Meses no mercado</div>
         </section> */}
+        <Info />
         <Services />
         <About />
         <Contact />
