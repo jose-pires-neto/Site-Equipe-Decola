@@ -32,6 +32,14 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (menuOn) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [menuOn]);
+
   return (
     <HeaderStyle color={scroll > 50 ? "BrandBlue" : "Blue"}>
       <Container>
@@ -57,11 +65,8 @@ export function Header() {
           FAÇA O SEU ORÇAMENTO
         </Button>
         <Menu Appearance={menuOn ? "fullScreen" : "hidden"}>
-          <Hamburger
-            color={scroll < 50 ? "#0090A5" : "white"}
-            onClick={() => setMenuOn(!menuOn)}
-          >
-            <Turn color={scroll < 50 ? "#0090A5" : "white"} />
+          <Hamburger onClick={() => setMenuOn(!menuOn)}>
+            <Turn color={scroll > 50 || menuOn ? "white" : "#0090A5"} />
           </Hamburger>
 
           {menuOn && (
