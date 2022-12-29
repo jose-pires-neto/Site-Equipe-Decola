@@ -4,7 +4,7 @@ import {
   MarketingContainer,
   MarketingImageContainer,
   MarketingContent,
-} from "./marketingStyle";
+} from "../../../components/ServicesPage/marketingStyle";
 import MarketingImage from "../../../assets/marketingImage.svg";
 import Image from "next/image";
 
@@ -17,7 +17,6 @@ export default function Marketing() {
         <MarketingImageContainer>
           <Image src={MarketingImage} alt="marketingImage" />
           <div>
-            <h2>Objetivos</h2>
             <p>
               O objetivo da consultoria de marketing é ajudar a empresa a
               alcançar seus objetivos de negócio, como aumentar as vendas,
