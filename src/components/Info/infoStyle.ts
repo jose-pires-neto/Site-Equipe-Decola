@@ -18,6 +18,29 @@ export const InfoSection = styled("div", {
     border: "none",
     backgroundColor: "$brandBlue800",
   },
+
+  "@mobile": {
+    height: "32rem",
+    width: "85vw",
+    left: "7.2%",
+    margin: "0 0 50rem 0",
+    hr: {
+      display: "none",
+    },
+    p: {
+      textAlign: "center",
+    },
+  },
+
+  "@largeMobile": {
+    height: "32rem",
+    width: "85vw",
+    left: "7.2%",
+    margin: "0 0 50rem 0",
+    hr: {
+      display: "none",
+    },
+  },
 });
 
 export const InfoContent = styled("div", {
@@ -25,6 +48,14 @@ export const InfoContent = styled("div", {
   justifyContent: "space-between",
   alignItems: "center",
   width: "100%",
+
+  "@mobile": {
+    flexDirection: "column",
+  },
+
+  "@largeMobile": {
+    flexDirection: "column",
+  },
 });
 
 export const InfoCard = styled("div", {
@@ -41,5 +72,9 @@ export const InfoCard = styled("div", {
   p: {
     fontSize: "1rem",
     color: "$brandBlue800",
+  },
+
+  "@mobile": {
+    width: "9rem",
   },
 });
