@@ -1,6 +1,6 @@
 import { styled } from "../../styles";
 
-export const MarketingSection = styled("main", {
+export const ServiceSection = styled("main", {
   marginTop: "5.3rem",
   backgroundColor: "$brandBlue200",
   alignItems: "center",
@@ -20,9 +20,20 @@ export const MarketingSection = styled("main", {
     border: "1px solid black",
     width: "100%",
   },
+
+  "@largeMobile": {
+    padding: "0",
+  },
+
+  "@mobile": {
+    padding: "0",
+    p: {
+      fontSize: "1.2rem",
+    },
+  },
 });
 
-export const MarketingContainer = styled("div", {
+export const ServiceContainer = styled("div", {
   maxWidth: "60rem",
   margin: "auto",
   h2: {
@@ -31,23 +42,47 @@ export const MarketingContainer = styled("div", {
     fontFamily: "orbitron",
   },
   img: {
-    maxWidth: "30rem",
+    maxWidth: "26rem",
     maxHeight: "20rem",
   },
 
+  "@tablet": {
+    img: {
+      maxWidth: "30rem",
+      maxHeight: "28rem",
+    },
+  },
+
   "@largeMobile": {
-    width: "18rem",
+    maxWidth: "22rem",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     h1: {
-      fontSize: "0.8rem",
+      fontSize: "2rem",
+      paddingTop: "1rem",
+    },
+    img: {
+      maxWidth: "22rem",
+      maxHeight: "16rem",
+    },
+  },
+
+  "@mobile": {
+    maxWidth: "18rem",
+    isplay: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    img: {
+      maxWidth: "18rem",
+      maxHeight: "12rem",
     },
   },
 });
 
-export const MarketingImageContainer = styled("section", {
+export const TextAndImageContainer = styled("section", {
   display: "flex",
   marginTop: "3rem",
   div: {
@@ -60,28 +95,32 @@ export const MarketingImageContainer = styled("section", {
     flexDirection: "column",
     alignItems: "center",
     div: {
-      padding: "2rem 0",
+      padding: "2rem 0 1rem 0",
     },
   },
 
   "@largeMobile": {
     img: {
-      width: "18rem",
-      height: "18rem",
+      maxWidth: "22rem",
+      maxHeight: "14rem",
     },
   },
 
   "@mobile": {
     img: {
-      width: "12rem",
-      height: "12rem",
+      width: "20rem",
+      height: "14rem",
     },
   },
 });
 
-export const MarketingContent = styled("div", {
+export const ContentContainer = styled("div", {
   p: {
     padding: "1rem 0",
   },
   marginBottom: "2rem",
+
+  "@mobile": {
+    maxWidth: "30rem",
+  },
 });

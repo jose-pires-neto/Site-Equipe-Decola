@@ -1,20 +1,20 @@
 import {
-  MarketingSection,
-  MarketingContainer,
-  MarketingImageContainer,
-  MarketingContent,
-} from "../../../components/ServicesPage/marketingStyle";
+  ServiceSection,
+  ServiceContainer,
+  TextAndImageContainer,
+  ContentContainer,
+} from "../../../components/ServicesPage/containerStyles";
 import SocialMediaImage from "../../../assets/socialMediaImage.svg";
 import Image from "next/image";
 import BudgetButton from "../../../components/BudgetButton/budgetButton";
 
 export default function SocialMedia() {
   return (
-    <MarketingSection>
-      <MarketingContainer>
+    <ServiceSection>
+      <ServiceContainer>
         <h1>Social Media</h1>
         <hr />
-        <MarketingImageContainer>
+        <TextAndImageContainer>
           <Image src={SocialMediaImage} alt="social-media-image" />
           <div>
             <p>
@@ -25,8 +25,8 @@ export default function SocialMedia() {
               resultados obtidos.
             </p>
           </div>
-        </MarketingImageContainer>
-        <MarketingContent>
+        </TextAndImageContainer>
+        <ContentContainer>
           <p>
             Social media é o uso das redes sociais como uma plataforma para
             promover um negócio ou marca e atrair novos clientes. Isso pode
@@ -36,9 +36,9 @@ export default function SocialMedia() {
             visibilidade e o envolvimento dos seguidores, bem como a interação
             com os clientes através de comentários e mensagens privadas.
           </p>
-        </MarketingContent>
+        </ContentContainer>
         <BudgetButton />
-      </MarketingContainer>
-    </MarketingSection>
+      </ServiceContainer>
+    </ServiceSection>
   );
 }

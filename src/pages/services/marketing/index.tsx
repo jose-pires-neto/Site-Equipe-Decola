@@ -1,20 +1,20 @@
 import BudgetButton from "../../../components/BudgetButton/budgetButton";
 import {
-  MarketingSection,
-  MarketingContainer,
-  MarketingImageContainer,
-  MarketingContent,
-} from "../../../components/ServicesPage/marketingStyle";
+  ServiceSection,
+  ServiceContainer,
+  TextAndImageContainer,
+  ContentContainer,
+} from "../../../components/ServicesPage/containerStyles";
 import MarketingImage from "../../../assets/marketingImage.svg";
 import Image from "next/image";
 
 export default function Marketing() {
   return (
-    <MarketingSection>
-      <MarketingContainer>
+    <ServiceSection>
+      <ServiceContainer>
         <h1>A Consultoria de Marketing</h1>
         <hr />
-        <MarketingImageContainer>
+        <TextAndImageContainer>
           <Image src={MarketingImage} alt="marketingImage" />
           <div>
             <p>
@@ -23,8 +23,8 @@ export default function Marketing() {
               atrair novos clientes e fortalecer a sua marca.
             </p>
           </div>
-        </MarketingImageContainer>
-        <MarketingContent>
+        </TextAndImageContainer>
+        <ContentContainer>
           <p>
             As consultorias de marketing podem oferecer serviços de assessoria,
             treinamento e implementação de estratégias, bem como realizar
@@ -36,9 +36,9 @@ export default function Marketing() {
             confiável e experiente, entre em contato conosco hoje mesmo. Estamos
             ansiosos para ajudá-lo a alcançar o sucesso.
           </p>
-        </MarketingContent>
+        </ContentContainer>
         <BudgetButton />
-      </MarketingContainer>
-    </MarketingSection>
+      </ServiceContainer>
+    </ServiceSection>
   );
 }

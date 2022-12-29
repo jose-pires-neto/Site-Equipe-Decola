@@ -1,20 +1,20 @@
 import {
-  MarketingSection,
-  MarketingContainer,
-  MarketingImageContainer,
-  MarketingContent,
-} from "../../../components/ServicesPage/marketingStyle";
+  ServiceSection,
+  ServiceContainer,
+  TextAndImageContainer,
+  ContentContainer,
+} from "../../../components/ServicesPage/containerStyles";
 import Image from "next/image";
 import identidadeVisualImage from "../../../assets/identidadeVisualImage.svg";
 import BudgetButton from "../../../components/BudgetButton/budgetButton";
 
 export default function IdentidadeVisual() {
   return (
-    <MarketingSection>
-      <MarketingContainer>
+    <ServiceSection>
+      <ServiceContainer>
         <h1>Identidade Visual</h1>
         <hr />
-        <MarketingImageContainer>
+        <TextAndImageContainer>
           <Image src={identidadeVisualImage} alt="identidade-visual-image" />
           <div>
             <p>
@@ -25,8 +25,8 @@ export default function IdentidadeVisual() {
               da empresa, incluindo site, material de marketing e redes sociais.
             </p>
           </div>
-        </MarketingImageContainer>
-        <MarketingContent>
+        </TextAndImageContainer>
+        <ContentContainer>
           <p>
             Para criar a identidade visual de uma empresa, nós seguimos um
             processo rigoroso. Isso inclui reunir informações sobre os objetivos
@@ -46,9 +46,9 @@ export default function IdentidadeVisual() {
             criação de cartões de visita, folhetos e outros materiais de
             marketing.
           </p>
-        </MarketingContent>
+        </ContentContainer>
         <BudgetButton />
-      </MarketingContainer>
-    </MarketingSection>
+      </ServiceContainer>
+    </ServiceSection>
   );
 }
