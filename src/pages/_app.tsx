@@ -1,28 +1,18 @@
 import type { AppProps } from "next/app";
 import { globalStyles } from "../styles/global";
-import Image from "next/image";
-import logo from "../assets/logo.svg";
-import { Header, Wrapper } from "../styles/_app";
+
+import { Wrapper } from "../styles/_app";
+import { Header } from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 
 globalStyles();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Wrapper>
-      <Header>
-        <Image src={logo} alt="Logo da Equipe Decola"></Image>
-        <nav>
-          <ul>
-            <li>Início</li>
-            <li>Sobre</li>
-            <li>Serviços</li>
-            <li>Depoimentos</li>
-          </ul>
-        </nav>
-        <button type="button">FAÇA O SEU ORÇAMENTO</button>
-      </Header>
-
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </Wrapper>
   );
 }

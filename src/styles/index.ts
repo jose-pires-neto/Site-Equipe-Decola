@@ -23,4 +23,11 @@ export const {
       brandBlue200: "#F0F8FF",
     },
   },
+  media: {
+    mobile: "(max-width: 376px)",
+    largeMobile: "(max-width: 500px)",
+    tablet: "(max-width: 820px)",
+    laptopTab: "(max-width: 975px)",
+    laptop: "(max-width: 1270px)",
+  },
 });
