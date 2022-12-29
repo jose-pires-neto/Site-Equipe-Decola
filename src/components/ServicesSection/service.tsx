@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { ServicesSection, ServicesField, ServicesCard } from "./servicesStyle";
-import browser from "../../assets/icons/browser.svg";
-import bulb from "../../assets/icons/bulb.svg";
-import code from "../../assets/icons/code.svg";
-import presentation from "../../assets/icons/presentation.svg";
-import strategy from "../../assets/icons/strategy.svg";
-import thumbsUp from "../../assets/icons/thumbsUp.svg";
+import browser from "../../assets/icons/LandingPageIcon.svg";
+import bulb from "../../assets/icons/MarketingIcon.svg";
+import code from "../../assets/icons/SiteIcon.svg";
+import presentation from "../../assets/icons/CriacaoDeConteudoIcon.svg";
+import strategy from "../../assets/icons/IdentidadeVisualIcon.svg";
+import thumbsUp from "../../assets/icons/SocialMediaIcon.svg";
 import Link from "next/link";
 
 export default function Services() {
@@ -13,6 +13,7 @@ export default function Services() {
     <ServicesSection id="services">
       <h2>Como podemos ajudar no seu negócio?</h2>
       <ServicesField>
+
         <Link href="/services/marketing">
           <ServicesCard>
             <Image src={bulb} alt="logo-bulb" />
@@ -23,6 +24,7 @@ export default function Services() {
             </p>
           </ServicesCard>
         </Link>
+
         <ServicesCard>
           <Image src={browser} alt="logo-browser" />
           <h3>Landing Page</h3>
