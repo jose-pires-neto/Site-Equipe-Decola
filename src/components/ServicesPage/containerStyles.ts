@@ -124,3 +124,16 @@ export const ContentContainer = styled("div", {
     maxWidth: "30rem",
   },
 });
+
+export const IconsContainer = styled("div", {
+  display: "flex",
+  div: {
+    display: "flex",
+    alignItems: "center",
+    gap: "0.3rem",
+  },
+  justifyContent: "space-between",
+  img: {
+    maxWidth: "8rem",
+  },
+});
