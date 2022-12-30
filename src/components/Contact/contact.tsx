@@ -5,6 +5,7 @@ import WhatsIcon from "../../assets/icons/whatsIcon.svg";
 import MapIcon from "../../assets/icons/mapIcon.svg";
 import EmailIcon from "../../assets/icons/emailIcon.svg";
 import Router from "next/router";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -19,15 +20,13 @@ export default function Contact() {
           <Image src={EmailIcon} alt="map-icon" />
           <p>equipedecola.adm@gmail.com</p>
         </div>
-        <button
-          type="button"
-          onClick={() =>
-            Router.push("https://api.whatsapp.com/send?phone=5591984490280")
-          }
+        <Link
+          href={"https://api.whatsapp.com/send?phone=5591984490280"}
+          target="_blank"
         >
           <Image src={WhatsIcon} alt="whats-icon" />
           Faça o seu orçamento
-        </button>
+        </Link>
       </ContactContent>
       <Image src={ContactImage} alt="conteact-image" />
     </ContactSection>

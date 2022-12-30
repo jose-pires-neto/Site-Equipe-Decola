@@ -12,6 +12,14 @@ export const ServicesSection = styled("section", {
     textDecoration: "none",
     color: "inherit",
   },
+
+  span: {
+    color: "$brandBlue800",
+    fontSize: "0.90rem",
+    fontWeight: "bold",
+    paddingBlock: "1rem",
+  },
+
   h2: {
     fontSize: "3rem",
     textAlign: "center",

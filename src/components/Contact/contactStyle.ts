@@ -64,7 +64,8 @@ export const ContactContent = styled("div", {
     marginBottom: "1.7rem",
   },
 
-  button: {
+  a: {
+    textDecoration: "none",
     display: "flex",
     width: "18rem",
     height: "3.5rem",
@@ -81,6 +82,10 @@ export const ContactContent = styled("div", {
     img: {
       width: "1.6rem",
       height: "1.6rem",
+    },
+    "&:hover": {
+      backgroundColor: "$brandBlueHover",
+      transition: "0.4s",
     },
   },
 
