@@ -7,7 +7,6 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    // backgroundColor: "",
     color: "$gray700",
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
@@ -17,5 +16,11 @@ export const globalStyles = globalCss({
   "body, input, textarea, button": {
     fontFamily: "DM Sans",
     fontWeight: 400,
+  },
+
+  "@media screen and (max-width: 480px)": {
+    body: {
+      overflowY: "hidden",
+    },
   },
 });
