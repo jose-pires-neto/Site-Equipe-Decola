@@ -3,7 +3,9 @@ import { Button, ButtonContainer } from "./budgetButtonStyle";
 export default function BudgetButton() {
   return (
     <ButtonContainer>
-      <Button>FAÇA O SEU ORÇAMENTO {">>>"} </Button>
+      <Button>
+        <p>FAÇA O SEU ORÇAMENTO {">>>"} </p>
+      </Button>
     </ButtonContainer>
   );
 }

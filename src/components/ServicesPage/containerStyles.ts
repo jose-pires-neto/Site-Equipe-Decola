@@ -48,8 +48,8 @@ export const ServiceContainer = styled("div", {
 
   "@tablet": {
     img: {
-      maxWidth: "30rem",
-      maxHeight: "28rem",
+      maxWidth: "28rem",
+      maxHeight: "26rem",
     },
   },
 
@@ -108,7 +108,7 @@ export const TextAndImageContainer = styled("section", {
 
   "@mobile": {
     img: {
-      width: "20rem",
+      width: "18rem",
       height: "14rem",
     },
   },
@@ -127,13 +127,71 @@ export const ContentContainer = styled("div", {
 
 export const IconsContainer = styled("div", {
   display: "flex",
+  justifyContent: "space-between",
+  // border: "1px solid black",
   div: {
     display: "flex",
+    maxWidth: "12rem",
+    flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
     gap: "0.3rem",
+
+    h3: {
+      fontFamily: "orbitron",
+      color: "$brandBlue800",
+      fontSize: "1.4rem",
+      textAlign: "center",
+    },
+    padding: "0.5rem",
   },
-  justifyContent: "space-between",
+
   img: {
     maxWidth: "8rem",
+  },
+
+  "@tablet": {
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "1.6rem 3.4rem",
+
+    div: {
+      maxWidth: "6rem",
+
+      img: {
+        maxWidth: "6rem",
+      },
+    },
+  },
+
+  "@largeMobile": {
+    div: {
+      width: "8rem",
+
+      h3: {
+        fontSize: "1.2rem",
+      },
+
+      img: {
+        maxWidth: "5.5rem",
+      },
+    },
+  },
+
+  "@mobile": {
+    justifyContent: "space-between",
+    gap: "0",
+    div: {
+      width: "6.8rem",
+
+      h3: {
+        fontSize: "1rem",
+      },
+
+      img: {
+        width: "4.6rem",
+      },
+    },
   },
 });

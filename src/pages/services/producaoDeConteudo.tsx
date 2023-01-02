@@ -50,19 +50,23 @@ export default function ProducaoDeConteudo() {
           <IconsContainer>
             <div>
               <Image src={engajamentoIcon} alt="engajamento-icon" />
-              <Image src={engajamentoText} alt="engajamento-texto" />
+              {/* <Image src={engajamentoText} alt="engajamento-texto" /> */}
+              <h3>Engajamento ao público</h3>
             </div>
             <div>
               <Image src={SEOIcon} alt="SEO-icon" />
-              <Image src={SEOText} alt="SEO-texto" />
+              {/* <Image src={SEOText} alt="SEO-texto" /> */}
+              <h3>SEO</h3>
             </div>
             <div>
               <Image src={leadsIcon} alt="leads-icon" />
-              <Image src={leadsText} alt="leads-texto" />
+              {/* <Image src={leadsText} alt="leads-texto" /> */}
+              <h3>Geração de leads</h3>
             </div>
             <div>
               <Image src={autoridadeIcon} alt="autoridade-icon" />
-              <Image src={autoridadeText} alt="autoridade-texto" />
+              {/* <Image src={autoridadeText} alt="autoridade-texto" /> */}
+              <h3>Autoridade</h3>
             </div>
           </IconsContainer>
           <p>
