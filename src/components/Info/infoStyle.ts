@@ -12,6 +12,7 @@ export const InfoSection = styled("div", {
   left: "16%",
   border: "solid 2px $brandBlue800",
   borderRadius: "8px",
+  zIndex: 90,
   hr: {
     width: "0.1rem",
     height: "5.4rem",
