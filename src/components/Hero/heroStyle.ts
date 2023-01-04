@@ -1,6 +1,46 @@
 import { styled } from "../../styles";
 
+export const Carousel = styled("section", {
+  overflow: "hidden",
+  height: "56rem",
+
+  "@largeMobile": {
+    height: "auto",
+  },
+});
+
 export const SlideContent = styled("div", {
+  width: "100%",
+  textAlign: "left",
+  height: "auto",
+
+  img: {
+    width: "100%",
+    height: "100%",
+  },
+
+  "@tablet": {
+    height: "40rem",
+  },
+
+  "@largeMobile": {
+    height: "36rem",
+
+    img: {
+      width: "48rem",
+      height: "36rem",
+    },
+  },
+
+  "@mobile": {
+    img: {
+      width: "40rem",
+      height: "30rem",
+    },
+  },
+});
+
+export const SlideCaption = styled("div", {
   variants: {
     ColorText: {
       brandBlue: {
@@ -21,105 +61,62 @@ export const SlideContent = styled("div", {
     },
   },
 
-  width: "100%",
-  textAlign: "left",
-  height: "56rem",
-  overflow: "hidden",
-
-  img: {
-    width: "150rem",
-    height: "auto",
-  },
+  position: "absolute",
+  marginTop: "8rem",
+  marginLeft: "6rem",
 
   h1: {
-    marginTop: "8rem",
     fontFamily: "Orbitron",
     fontWeight: "bold",
     fontSize: "6rem",
-    marginBottom: "2rem",
-    position: "absolute",
+    marginBottom: "1rem",
     maxWidth: "70rem",
-    left: 130,
   },
 
   h3: {
     maxWidth: "46rem",
     fontSize: "2rem",
-    position: "absolute",
-    top: 490,
-    left: 130,
     color: "$white",
   },
 
   "@laptop": {
-    img: {
-      width: "90rem",
-      height: "auto",
-    },
+    marginTop: "6rem",
 
     h1: {
-      top: 100,
-      fontSize: "4.4rem",
-      maxWidth: "60rem",
-    },
-    h3: {
-      top: 480,
-      fontSize: "2rem",
+      fontSize: "5.2rem",
+      marginBottom: 0,
     },
   },
 
   "@laptopTab": {
     h1: {
-      fontSize: "4rem",
-      left: 100,
-    },
-    h3: {
-      left: 100,
-      top: 460,
-      fontSize: "1.8rem",
+      fontSize: "4.5rem",
     },
   },
 
   "@tablet": {
-    height: "40rem",
-
-    img: {
-      width: "70rem",
-    },
+    marginTop: "8rem",
+    marginLeft: "3rem",
 
     h1: {
-      fontSize: "3rem",
+      fontSize: "3.6rem",
+      marginBottom: "2rem",
     },
-
     h3: {
-      top: 460,
       fontSize: "1.6rem",
-      maxWidth: "40rem",
+      maxWidth: "34rem",
     },
   },
 
   "@largeMobile": {
-    height: "26rem",
-
-    img: {
-      width: "40rem",
-      height: "26rem",
-    },
-
+    marginLeft: "0.4rem",
     h1: {
-      fontSize: "1rem",
+      fontSize: "2.4rem",
+      marginBottom: "1rem",
     },
     h3: {
-      fontSize: "0.8rem",
+      fontSize: "1.3rem",
+      maxWidth: "23rem",
     },
   },
-
-  // // "@mobile": {
-  // //   h1: {
-  // //     fontSize: "1rem",
-  // //   },
-  // //   h3: {
-  // //     fontSize: "0.8rem",
-  // //   },
-  // // },
 });

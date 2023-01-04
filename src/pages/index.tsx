@@ -7,7 +7,7 @@ import Info from "../components/Info/info";
 export default function Home() {
   return (
     <>
-      <main>
+      <main style={{ backgroundColor: "#F0F8FF" }}>
         <Hero />
         <Info />
         <Services />
