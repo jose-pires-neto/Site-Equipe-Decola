@@ -3,10 +3,11 @@ import {
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../../components/ServicesPage/containerStyles";
-import SocialMediaImage from "../../../assets/socialMediaImage.svg";
+} from "../../components/ServicesPage/containerStyles";
 import Image from "next/image";
-import BudgetButton from "../../../components/BudgetButton/budgetButton";
+import BudgetButton from "../../components/BudgetButton/budgetButton";
+
+import SocialMediaImage from "../../assets/pages/socialMediaImage.svg";
 
 export default function SocialMedia() {
   return (

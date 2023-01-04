@@ -1,11 +1,12 @@
-import BudgetButton from "../../../components/BudgetButton/budgetButton";
+import BudgetButton from "../../components/BudgetButton/budgetButton";
 import {
   ServiceSection,
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../../components/ServicesPage/containerStyles";
-import MarketingImage from "../../../assets/marketingImage.svg";
+} from "../../components/ServicesPage/containerStyles";
+import MarketingImage from "../../assets/pages/marketingImage.svg";
+
 import Image from "next/image";
 
 export default function Marketing() {

@@ -10,10 +10,10 @@ import {
 import Image from "next/image";
 import BudgetButton from "../../components/BudgetButton/budgetButton";
 
-import CriacaoDeSitesImage from "../../assets/criacaoDeSitesImage.svg";
+import CriacaoDeSitesImage from "../../assets/pages/criacaoDeSitesImage.svg";
 import TestsIcon from "../../assets/icons/testsIcon.svg";
-import Code from "../../assets/icons/SiteIcon.svg";
-import Presentation from "../../assets/icons/CriacaoDeConteudoIcon.svg";
+import Code from "../../assets/icons/siteIcon.svg";
+import Presentation from "../../assets/icons/criacaoDeConteudoIcon.svg";
 
 export default function CriacaoDeConteudo() {
   return (

@@ -6,13 +6,13 @@ import {
   IconsContainer,
 } from "../../components/ServicesPage/containerStyles";
 import Image from "next/image";
-import ProducaoDeConteudoImage from "../../assets/producaoDeConteudoImage.svg";
 import BudgetButton from "../../components/BudgetButton/budgetButton";
 
-import engajamentoIcon from "../../assets/producaoDeConteudoIcons/engajamentoIcon.svg";
-import SEOIcon from "../../assets/producaoDeConteudoIcons/SEOIcon.svg";
-import autoridadeIcon from "../../assets/producaoDeConteudoIcons/autoridadeIcon.svg";
-import leadsIcon from "../../assets/producaoDeConteudoIcons/leadsIcon.svg";
+import ProducaoDeConteudoImage from "../../assets/pages/producaoDeConteudoImage.svg";
+import engajamentoIcon from "../../assets/icons/producaoDeConteudoIcons/engajamentoIcon.svg";
+import SEOIcon from "../../assets/icons/producaoDeConteudoIcons/SEOIcon.svg";
+import autoridadeIcon from "../../assets/icons/producaoDeConteudoIcons/autoridadeIcon.svg";
+import leadsIcon from "../../assets/icons/producaoDeConteudoIcons/leadsIcon.svg";
 
 export default function ProducaoDeConteudo() {
   return (

@@ -3,10 +3,11 @@ import {
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../../components/ServicesPage/containerStyles";
+} from "../../components/ServicesPage/containerStyles";
 import Image from "next/image";
-import identidadeVisualImage from "../../../assets/identidadeVisualImage.svg";
-import BudgetButton from "../../../components/BudgetButton/budgetButton";
+import BudgetButton from "../../components/BudgetButton/budgetButton";
+
+import identidadeVisualImage from "../../assets/pages/identidadeVisualImage.svg";
 
 export default function IdentidadeVisual() {
   return (

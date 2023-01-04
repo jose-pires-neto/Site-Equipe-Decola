@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { ServicesSection, ServicesField, ServicesCard } from "./servicesStyle";
-import browser from "../../assets/icons/LandingPageIcon.svg";
-import bulb from "../../assets/icons/MarketingIcon.svg";
-import code from "../../assets/icons/SiteIcon.svg";
-import presentation from "../../assets/icons/CriacaoDeConteudoIcon.svg";
-import strategy from "../../assets/icons/IdentidadeVisualIcon.svg";
-import thumbsUp from "../../assets/icons/SocialMediaIcon.svg";
+import browser from "../../assets/icons/landingPageIcon.svg";
+import bulb from "../../assets/icons/marketingIcon.svg";
+import code from "../../assets/icons/siteIcon.svg";
+import presentation from "../../assets/icons/criacaoDeConteudoIcon.svg";
+import strategy from "../../assets/icons/identidadeVisualIcon.svg";
+import thumbsUp from "../../assets/icons/socialMediaIcon.svg";
 import Link from "next/link";
 
 export default function Services() {
@@ -45,7 +45,7 @@ export default function Services() {
             </p>
           </ServicesCard>
         </Link>
-        <Link href="services/socialMedia">
+        <Link href="services/social_media">
           <ServicesCard>
             <Image src={thumbsUp} alt="logo-thumbsUp" />
             <h3>Social Media</h3>
@@ -56,7 +56,7 @@ export default function Services() {
             </p>
           </ServicesCard>
         </Link>
-        <Link href="services/identidadeVisual">
+        <Link href="services/identidade_visual">
           <ServicesCard>
             <Image src={strategy} alt="logo-strategy" />
             <h3>Identidade Visual</h3>
@@ -67,7 +67,7 @@ export default function Services() {
             </p>
           </ServicesCard>
         </Link>
-        <Link href="services/producaoDeConteudo">
+        <Link href="services/producao_de_conteudo">
           <ServicesCard>
             <Image src={presentation} alt="logo-presentation" />
             <h3>Produção de conteúdo</h3>
