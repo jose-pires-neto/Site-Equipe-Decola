@@ -23,24 +23,28 @@ export default function Services() {
             </p>
           </ServicesCard>
         </Link>
-
-        <ServicesCard>
-          <Image src={browser} alt="logo-browser" />
-          <h3>Landing Page</h3>
-          <p>
-            Uma landing page coverte os visitantes em leads, informações de
-            contato de pessoas interessadas no produto ou serviço oferecido pela
-            empresa.
-          </p>
-        </ServicesCard>
-        <ServicesCard>
-          <Image src={code} alt="logo-code" />
-          <h3>Criação de sites/blog</h3>
-          <p>
-            Os sites são utilizados para difundir informações, promover produtos
-            e serviços, estabelecer uma presença online para a sua empresa.
-          </p>
-        </ServicesCard>
+        <Link href="services/landing_page">
+          <ServicesCard>
+            <Image src={browser} alt="logo-browser" />
+            <h3>Landing Page</h3>
+            <p>
+              Uma landing page coverte os visitantes em leads, informações de
+              contato de pessoas interessadas no produto ou serviço oferecido
+              pela empresa.
+            </p>
+          </ServicesCard>
+        </Link>
+        <Link href="services/criacao_de_sites">
+          <ServicesCard>
+            <Image src={code} alt="logo-code" />
+            <h3>Criação de sites/blog</h3>
+            <p>
+              Os sites são utilizados para difundir informações, promover
+              produtos e serviços, estabelecer uma presença online para a sua
+              empresa.
+            </p>
+          </ServicesCard>
+        </Link>
         <Link href="services/socialMedia">
           <ServicesCard>
             <Image src={thumbsUp} alt="logo-thumbsUp" />

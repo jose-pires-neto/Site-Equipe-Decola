@@ -7,16 +7,20 @@ export const ServiceSection = styled("main", {
   justifyContent: "center",
   height: "100%",
   padding: "3rem 5rem",
+
   p: {
     fontSize: "1.5rem",
     textAlign: "justify",
   },
+
   h1: {
     fontSize: "3rem",
     paddingBottom: "0.5rem",
     fontFamily: "orbitron",
   },
+
   hr: {
+    marginTop: "1rem",
     border: "1px solid black",
     width: "100%",
   },
@@ -36,11 +40,13 @@ export const ServiceSection = styled("main", {
 export const ServiceContainer = styled("div", {
   maxWidth: "60rem",
   margin: "auto",
+
   h2: {
     paddingBottom: "1rem",
     fontSize: "1.5rem",
     fontFamily: "orbitron",
   },
+
   img: {
     maxWidth: "26rem",
     maxHeight: "20rem",
@@ -48,8 +54,8 @@ export const ServiceContainer = styled("div", {
 
   "@tablet": {
     img: {
-      maxWidth: "28rem",
-      maxHeight: "26rem",
+      maxWidth: "24rem",
+      maxHeight: "22rem",
     },
   },
 
@@ -85,6 +91,8 @@ export const ServiceContainer = styled("div", {
 export const TextAndImageContainer = styled("section", {
   display: "flex",
   marginTop: "3rem",
+  marginBottom: "1rem",
+
   div: {
     display: "flex",
     flexDirection: "column",
@@ -94,6 +102,7 @@ export const TextAndImageContainer = styled("section", {
   "@tablet": {
     flexDirection: "column",
     alignItems: "center",
+
     div: {
       padding: "2rem 0 1rem 0",
     },
@@ -115,10 +124,11 @@ export const TextAndImageContainer = styled("section", {
 });
 
 export const ContentContainer = styled("div", {
+  marginBottom: "2rem",
+
   p: {
     padding: "1rem 0",
   },
-  marginBottom: "2rem",
 
   "@mobile": {
     maxWidth: "30rem",
@@ -128,7 +138,7 @@ export const ContentContainer = styled("div", {
 export const IconsContainer = styled("div", {
   display: "flex",
   justifyContent: "space-between",
-  // border: "1px solid black",
+
   div: {
     display: "flex",
     maxWidth: "12rem",
@@ -192,6 +202,108 @@ export const IconsContainer = styled("div", {
       img: {
         width: "4.6rem",
       },
+    },
+  },
+});
+
+export const CriacaoDeSitesContainer = styled("div", {
+  display: "flex",
+  justifyContent: "space-between",
+
+  div: {
+    width: "18rem",
+
+    p: {
+      fontSize: "1.2rem",
+    },
+  },
+
+  "@laptop": {
+    flexDirection: "column",
+
+    div: {
+      width: "100%",
+      display: "flex",
+    },
+  },
+});
+
+export const StepsCard = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  paddingTop: "0.5rem",
+});
+
+export const CardImage = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "3.5rem",
+
+  h3: {
+    fontFamily: "orbitron",
+    color: "$brandBlue800",
+    fontSize: "1.4rem",
+    maxWidth: "12rem",
+    textAlign: "center",
+  },
+
+  div: {
+    width: "4rem",
+
+    img: {
+      width: "100%",
+      height: "auto",
+    },
+  },
+
+  "@laptop": {
+    justifyContent: "flex-start",
+    height: "2rem",
+
+    h3: {
+      paddingLeft: "1rem",
+      maxWidth: "100%",
+    },
+
+    div: {
+      width: "2.5rem",
+    },
+  },
+
+  "@mobile": {
+    height: "4.2rem",
+
+    div: {
+      width: "3.2rem",
+    },
+  },
+});
+
+export const LandingPageContainer = styled("div", {
+  display: "flex",
+  alignItems: "center",
+
+  img: {
+    paddingRight: "2rem",
+    maxWidth: "14rem",
+    maxHeight: "12rem",
+  },
+
+  "@tablet": {
+    flexDirection: "column",
+
+    img: {
+      padding: "0.5rem 0",
+      maxWidth: "10rem",
+      maxHeight: "8rem",
+    },
+  },
+
+  "@mobile": {
+    img: {
+      maxWidth: "8rem",
+      maxHeight: "6rem",
     },
   },
 });

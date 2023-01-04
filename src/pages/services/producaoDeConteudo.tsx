@@ -10,16 +10,9 @@ import ProducaoDeConteudoImage from "../../assets/producaoDeConteudoImage.svg";
 import BudgetButton from "../../components/BudgetButton/budgetButton";
 
 import engajamentoIcon from "../../assets/producaoDeConteudoIcons/engajamentoIcon.svg";
-import engajamentoText from "../../assets/producaoDeConteudoIcons/engajamentoText.svg";
-
 import SEOIcon from "../../assets/producaoDeConteudoIcons/SEOIcon.svg";
-import SEOText from "../../assets/producaoDeConteudoIcons/SEOText.svg";
-
 import autoridadeIcon from "../../assets/producaoDeConteudoIcons/autoridadeIcon.svg";
-import autoridadeText from "../../assets/producaoDeConteudoIcons/autoridadeText.svg";
-
 import leadsIcon from "../../assets/producaoDeConteudoIcons/leadsIcon.svg";
-import leadsText from "../../assets/producaoDeConteudoIcons/leadsText.svg";
 
 export default function ProducaoDeConteudo() {
   return (
@@ -50,22 +43,18 @@ export default function ProducaoDeConteudo() {
           <IconsContainer>
             <div>
               <Image src={engajamentoIcon} alt="engajamento-icon" />
-              {/* <Image src={engajamentoText} alt="engajamento-texto" /> */}
               <h3>Engajamento ao público</h3>
             </div>
             <div>
               <Image src={SEOIcon} alt="SEO-icon" />
-              {/* <Image src={SEOText} alt="SEO-texto" /> */}
               <h3>SEO</h3>
             </div>
             <div>
               <Image src={leadsIcon} alt="leads-icon" />
-              {/* <Image src={leadsText} alt="leads-texto" /> */}
               <h3>Geração de leads</h3>
             </div>
             <div>
               <Image src={autoridadeIcon} alt="autoridade-icon" />
-              {/* <Image src={autoridadeText} alt="autoridade-texto" /> */}
               <h3>Autoridade</h3>
             </div>
           </IconsContainer>
