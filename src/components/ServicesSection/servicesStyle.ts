@@ -31,6 +31,7 @@ export const ServicesSection = styled("section", {
       fontSize: "2rem",
     },
     paddingTop: "25rem",
+    overflowY: "hidden",
   },
 
   "@largeMobile": {
