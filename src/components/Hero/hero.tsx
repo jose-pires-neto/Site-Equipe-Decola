@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,17 +12,6 @@ import carrossel2 from "../../assets/carrossel2.png";
 import carrossel3 from "../../assets/carrossel3.png";
 
 export default function Hero() {
-  const [navigation, setNavigation] = useState<boolean | number>(true);
-
-  useEffect(() => {
-    function handleResize() {
-      setNavigation(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <Carousel>
       <style>{`
@@ -34,12 +22,22 @@ export default function Hero() {
         .swiper-button-next {
           color: #ffff;
         }
+
+        @media (max-width: 768px) {
+          .swiper-button-prev {
+            display: none;
+          }
+          
+          .swiper-button-next {
+            display: none;
+          }
+        }
       `}</style>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        navigation={navigation <= 768 ? false : true}
+        navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
         autoplay={{
           delay: 15000,
