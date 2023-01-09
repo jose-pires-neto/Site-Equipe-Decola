@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <main style={{ backgroundColor: "#F0F8FF" }}>
         <Hero />
-        <Info />
         <Services />
         <About />
         <Contact />

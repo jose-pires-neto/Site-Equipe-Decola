@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Turn } from "hamburger-react";
 import Link from "next/link";
 
-import logo from "../../assets/logo.svg";
-import whiteLogo from "../../assets/logo-branca.svg";
+import logo from "../../assets/logo.png";
+import whiteLogo from "../../assets/logo-branca2.png";
 import instagramIcon from "../../assets/icons/instagram.svg";
 import facebookIcon from "../../assets/icons/facebook.svg";
 import youtubeIcon from "../../assets/icons/youtube.svg";
@@ -47,6 +47,8 @@ export function Header() {
           <Image
             src={scroll > 50 ? whiteLogo : logo}
             alt="Logo da Equipe Decola"
+            width={160}
+            height={64}
           />
         </Link>
         <Navbar isHidden={menuOn ? "false" : "true"}>
@@ -61,9 +63,11 @@ export function Header() {
           </Link>
           <li>Depoimentos</li>
         </Navbar>
-        <Button type="button" color={scroll > 50 ? "White" : "BrandBlue"}>
-          FAÇA O SEU ORÇAMENTO
-        </Button>
+        <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+          <Button type="button" color={scroll > 50 ? "White" : "BrandBlue"}>
+            FAÇA O SEU ORÇAMENTO
+          </Button>
+        </Link>
         <Menu Appearance={menuOn ? "fullScreen" : "hidden"}>
           <Hamburger onClick={() => setMenuOn(!menuOn)}>
             <Turn color={scroll > 50 || menuOn ? "white" : "#0090A5"} />

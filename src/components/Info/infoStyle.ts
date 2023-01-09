@@ -1,5 +1,14 @@
 import { styled } from "../../styles";
 
+export const ContainerInfo = styled("section", {
+  display: "flex",
+  justifyContent: "center",
+
+  "@tablet": {
+    paddingTop: "1rem",
+  },
+});
+
 export const InfoSection = styled("div", {
   display: "flex",
   justifyContent: "center",
@@ -7,9 +16,6 @@ export const InfoSection = styled("div", {
   backgroundColor: "$brandBlue400",
   height: "12rem",
   width: "70vw",
-  position: "absolute",
-  top: "78%",
-  left: "16%",
   border: "solid 2px $brandBlue800",
   borderRadius: "8px",
   zIndex: 90,
@@ -24,7 +30,6 @@ export const InfoSection = styled("div", {
     height: "32rem",
     width: "85vw",
     left: "7.2%",
-    margin: "0 0 50rem 0",
     hr: {
       display: "none",
     },
@@ -37,7 +42,6 @@ export const InfoSection = styled("div", {
     height: "32rem",
     width: "85vw",
     left: "7.2%",
-    margin: "0 0 50rem 0",
     hr: {
       display: "none",
     },
