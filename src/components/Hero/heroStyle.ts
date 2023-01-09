@@ -2,7 +2,8 @@ import { styled } from "../../styles";
 
 export const Carousel = styled("section", {
   overflow: "hidden",
-  height: "56rem",
+  height: "auto",
+  maxHeight: "50rem",
 
   "@largeMobile": {
     height: "auto",
@@ -109,7 +110,7 @@ export const SlideCaption = styled("div", {
   },
 
   "@largeMobile": {
-    marginLeft: "0.4rem",
+    marginLeft: "0.8rem",
     h1: {
       fontSize: "2.4rem",
       marginBottom: "1rem",

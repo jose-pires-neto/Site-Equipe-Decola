@@ -7,7 +7,7 @@ export const ServicesSection = styled("section", {
   justifyContent: "center",
   alignItems: "center",
   padding: "2.5rem",
-  paddingTop: "13rem",
+  paddingTop: "4rem",
   a: {
     textDecoration: "none",
     color: "inherit",
@@ -30,7 +30,7 @@ export const ServicesSection = styled("section", {
     h2: {
       fontSize: "2rem",
     },
-    paddingTop: "25rem",
+
     overflowY: "hidden",
   },
 
@@ -38,7 +38,6 @@ export const ServicesSection = styled("section", {
     h2: {
       fontSize: "2rem",
     },
-    paddingTop: "25rem",
   },
 });
 
