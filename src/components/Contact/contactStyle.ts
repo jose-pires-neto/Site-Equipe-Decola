@@ -8,6 +8,13 @@ export const ContactSection = styled("section", {
   padding: "1rem",
   height: "43.6875rem",
 
+  a: {
+    textDecoration: "none",
+    ":hover": {
+      cursor: "pointer",
+    },
+  },
+
   img: {
     maxWidth: "36rem",
     maxHeight: "34rem",
@@ -78,6 +85,7 @@ export const ContactContent = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     gap: "0.5rem",
+
     img: {
       width: "1.6rem",
       height: "1.6rem",
