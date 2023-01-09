@@ -14,6 +14,11 @@ export const Button = styled("button", {
   border: "none",
   borderRadius: "40px",
   color: "white",
+
+  ":hover": {
+    cursor: "pointer",
+  },
+
   p: {
     fontSize: "1.8rem",
     textAlign: "center",
