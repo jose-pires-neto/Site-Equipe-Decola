@@ -70,7 +70,9 @@ export const ContactContent = styled("div", {
     fontFamily: "Orbitron",
     marginBottom: "1.7rem",
   },
-
+  a: {
+    width: "18rem",
+  },
   button: {
     display: "flex",
     width: "18rem",
@@ -85,6 +87,7 @@ export const ContactContent = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     gap: "0.5rem",
+    cursor: "pointer",
 
     img: {
       width: "1.6rem",

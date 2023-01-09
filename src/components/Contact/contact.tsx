@@ -4,7 +4,6 @@ import ContactImage from "../../assets/contactUs.png";
 import WhatsIcon from "../../assets/icons/whatsIcon.svg";
 import MapIcon from "../../assets/icons/mapIcon.svg";
 import EmailIcon from "../../assets/icons/emailIcon.svg";
-import Router from "next/router";
 import Link from "next/link";
 
 export default function Contact() {

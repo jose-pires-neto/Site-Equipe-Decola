@@ -24,9 +24,6 @@ export const HeaderStyle = styled("header", {
         li: {
           color: "$white",
         },
-        button: {
-          color: "$white",
-        },
         img: {
           color: "$white",
         },
@@ -100,7 +97,6 @@ export const Button = styled("button", {
   border: "1px solid $brandBlue800",
   borderRadius: "40px",
   cursor: "pointer",
-  color: "$brandBlue800",
   padding: "0.625rem 1.5rem",
 
   "@tablet": {
@@ -111,9 +107,11 @@ export const Button = styled("button", {
     color: {
       BrandBlue: {
         borderColor: "$brandBlue800",
+        color: "$brandBlue800",
       },
       White: {
         borderColor: "$white",
+        color: "$white",
       },
     },
   },

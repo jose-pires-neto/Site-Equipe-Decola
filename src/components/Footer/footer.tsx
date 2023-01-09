@@ -4,7 +4,7 @@ import {
   SocialMediaAndCNPJ,
 } from "./footerStyle";
 import Image from "next/image";
-import LogoDecola from "../../assets/logo-branca.svg";
+import LogoDecola from "../../assets/logo-branca2.png";
 import instagramIcon from "../../assets/icons/instagram.svg";
 import facebookIcon from "../../assets/icons/facebook.svg";
 import youtubeIcon from "../../assets/icons/youtube.svg";
