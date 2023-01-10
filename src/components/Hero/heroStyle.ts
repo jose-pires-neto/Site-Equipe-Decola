@@ -128,6 +128,10 @@ export const ButtonSlide = styled('button', {
       blue: {
         backgroundColor: '$brandBlue800',
         color: '$white',
+        '&:hover': {
+          backgroundColor: '$brandBlueHover',
+          transition: '0.4s',
+        },
       },
       transparent: {
         backgroundColor: 'transparent',

@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { Turn } from "hamburger-react";
-import Link from "next/link";
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { Turn } from 'hamburger-react';
+import Link from 'next/link';
 
-import logo from "../../assets/logo.png";
-import whiteLogo from "../../assets/logo-branca2.png";
-import instagramIcon from "../../assets/icons/instagram.svg";
-import facebookIcon from "../../assets/icons/facebook.svg";
-import youtubeIcon from "../../assets/icons/youtube.svg";
+import logo from '../../assets/logo.png';
+import whiteLogo from '../../assets/logo-branca2.png';
+import instagramIcon from '../../assets/icons/instagram.svg';
+import facebookIcon from '../../assets/icons/facebook.svg';
+import youtubeIcon from '../../assets/icons/youtube.svg';
 import {
   HeaderStyle,
   Navbar,
@@ -17,7 +17,7 @@ import {
   Container,
   Footer,
   ButtonMenu,
-} from "./headerStyle";
+} from './headerStyle';
 
 export function Header() {
   const [scroll, setScroll] = useState(0);
@@ -28,20 +28,20 @@ export function Header() {
       setScroll(window.scrollY);
     }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     if (menuOn) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
   }, [menuOn]);
 
   return (
-    <HeaderStyle color={scroll > 50 ? "BrandBlue" : "Blue"}>
+    <HeaderStyle color={scroll > 50 ? 'BrandBlue' : 'Blue'}>
       <Container>
         <Link href="/">
           <Image
@@ -51,7 +51,7 @@ export function Header() {
             height={64}
           />
         </Link>
-        <Navbar isHidden={menuOn ? "false" : "true"}>
+        <Navbar isHidden={menuOn ? 'false' : 'true'}>
           <Link href="/">
             <li>Início</li>
           </Link>
@@ -64,18 +64,23 @@ export function Header() {
           <li>Depoimentos</li>
         </Navbar>
         <Link href="https://api.whatsapp.com/send?phone=5591984490280">
-          <Button type="button" color={scroll > 50 ? "White" : "BrandBlue"}>
+          <Button type="button" color={scroll > 50 ? 'White' : 'BrandBlue'}>
             FAÇA O SEU ORÇAMENTO
           </Button>
         </Link>
-        <Menu Appearance={menuOn ? "fullScreen" : "hidden"}>
+        <Menu Appearance={menuOn ? 'fullScreen' : 'hidden'}>
           <Hamburger onClick={() => setMenuOn(!menuOn)}>
-            <Turn color={scroll > 50 || menuOn ? "white" : "#0090A5"} />
+            <Turn color={scroll > 50 || menuOn ? 'white' : '#0090A5'} />
           </Hamburger>
 
           {menuOn && (
             <>
-              <Image src={whiteLogo} alt="Logo da Decola branca" />
+              <Image
+                src={whiteLogo}
+                alt="Logo da Decola branca"
+                width={160}
+                height={64}
+              />
               <Navbar isHidden="false">
                 <li>Início</li>
                 <li>Sobre</li>
@@ -83,7 +88,9 @@ export function Header() {
                   <li>Serviços</li>
                 </Link>
                 <li>Depoimentos</li>
-                <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
+                <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+                  <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
+                </Link>
                 <Footer>
                   <Image src={instagramIcon} alt="Instagram Icon" />
                   <Image src={facebookIcon} alt="Facebook Icon" />

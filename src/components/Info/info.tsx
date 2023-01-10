@@ -1,4 +1,4 @@
-import { InfoSection, InfoCard, InfoContent, ContainerInfo } from "./infoStyle";
+import { InfoSection, InfoCard, InfoContent, ContainerInfo } from './infoStyle';
 
 export default function Info() {
   return (
