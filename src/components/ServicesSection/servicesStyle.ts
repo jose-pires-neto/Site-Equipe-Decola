@@ -15,7 +15,7 @@ export const ServicesSection = styled("section", {
 
   span: {
     color: "$brandBlue800",
-    fontSize: "0.90rem",
+    fontSize: "1rem",
     fontWeight: "bold",
     paddingBlock: "1rem",
   },
@@ -83,6 +83,18 @@ export const ServicesCard = styled("div", {
     alignItems: "left",
     marginBottom: "0.5rem",
     paddingBottom: "0.3rem",
+  },
+  "&:hover": {
+    transition: "all 0.3s ease-in-out",
+    transform: "scale(1.1)",
+    backgroundColor: "$brandBlue300",
+
+    h3: {
+      color: "$brandBlueHover",
+    },
+    p: {
+      color: "$brandBlue800",
+    },
   },
 
   "@mobile": {

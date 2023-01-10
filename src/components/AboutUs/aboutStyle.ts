@@ -48,7 +48,7 @@ export const AboutContent = styled("div", {
 
   span: {
     color: "$brandBlue800",
-    fontSize: "0.90rem",
+    fontSize: "1rem",
     fontWeight: "bold",
     paddingBlock: "1rem",
   },
