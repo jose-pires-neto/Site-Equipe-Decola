@@ -11,6 +11,7 @@ import Link from 'next/link';
 export default function Services() {
   return (
     <ServicesSection id="services">
+      <span>SERVIÇOS</span>
       <h2>Como podemos ajudar no seu negócio?</h2>
       <ServicesField>
         <Link href="/services/marketing">
@@ -72,9 +73,9 @@ export default function Services() {
             <Image src={presentation} alt="logo-presentation" />
             <h3>Produção de conteúdo</h3>
             <p>
-              Produção e publicação de postagens em uma conta de Instagram, com
-              o objetivo de atrair e envolver seguidores e promover a sua marca
-              ou negócio.
+              Produção e publicação de postagens nas redes sociais, com o
+              objetivo de atrair e envolver seguidores e promover a sua marca ou
+              negócio.
             </p>
           </ServicesCard>
         </Link>

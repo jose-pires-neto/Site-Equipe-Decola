@@ -7,6 +7,7 @@ export default function About() {
     <AboutSection id="about">
       <Image alt="abut-me" src={AboutImage} />
       <AboutContent>
+        <span>SOBRE NÓS</span>
         <h2>Entenda quem somos e por que existimos.</h2>
         <p>
           Somos a Equipe Decola. Uma empresa especializada em serviços de
