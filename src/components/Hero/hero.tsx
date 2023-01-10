@@ -63,7 +63,7 @@ export default function Hero() {
             <SlideContent>
               <SlideCaption ColorText={'white'}>
                 <h1>Expanda a sua presença nas redes sociais.</h1>
-                <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+                <Link href="/services/social_media">
                   <ButtonSlide
                     backgroundColor={'blue'}
                   >{`SAIBA MAIS >>>`}</ButtonSlide>
@@ -76,7 +76,7 @@ export default function Hero() {
             <SlideContent>
               <SlideCaption ColorText={'brandBlue'}>
                 <h1>Conquiste a sua visibilidade na web.</h1>
-                <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+                <Link href="/services/landing_page">
                   <ButtonSlide
                     backgroundColor={'transparent'}
                   >{`SAIBA MAIS >>>`}</ButtonSlide>

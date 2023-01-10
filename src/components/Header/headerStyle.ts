@@ -1,156 +1,156 @@
-import { styled } from "../../styles/index";
+import { styled } from '../../styles/index';
 
-export const HeaderStyle = styled("header", {
+export const HeaderStyle = styled('header', {
   variants: {
     color: {
       BrandBlue: {
-        backgroundColor: "$brandBlue800",
-        display: "flex",
-        justifyContent: "center",
+        backgroundColor: '$brandBlue800',
+        display: 'flex',
+        justifyContent: 'center',
 
         a: {
-          textDecoration: "none",
-          color: "$white",
-          ":hover": {
-            textDecoration: "underline",
+          textDecoration: 'none',
+          color: '$white',
+          ':hover': {
+            textDecoration: 'underline',
           },
         },
 
-        position: "fixed",
-        width: "100vw",
-        zIndex: "99",
-        padding: "0.4rem 0",
+        position: 'fixed',
+        width: '100vw',
+        zIndex: '99',
+        padding: '0.4rem 0',
 
         li: {
-          color: "$white",
+          color: '$white',
         },
         img: {
-          color: "$white",
+          color: '$white',
         },
       },
       Blue: {
-        backgroundColor: "$brandBlue300",
-        display: "flex",
-        justifyContent: "center",
+        backgroundColor: '$brandBlue300',
+        display: 'flex',
+        justifyContent: 'center',
 
         a: {
-          textDecoration: "none",
-          color: "inherit",
-          ":hover": {
-            textDecoration: "underline",
+          textDecoration: 'none',
+          color: 'inherit',
+          ':hover': {
+            textDecoration: 'underline',
           },
         },
 
-        position: "fixed",
-        width: "100vw",
-        zIndex: "99",
-        padding: "0.4rem 0",
+        position: 'fixed',
+        width: '100vw',
+        zIndex: '99',
+        padding: '0.4rem 0',
       },
     },
   },
 });
 
-export const Container = styled("div", {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  height: "4.5rem",
-  padding: "0 2rem",
-  width: "90%",
+export const Container = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  height: '4.5rem',
+  padding: '0 2rem',
+  width: '90%',
 });
 
-export const Navbar = styled("nav", {
+export const Navbar = styled('nav', {
   variants: {
     isHidden: {
       true: {},
       false: {
-        color: "$white",
-        textAlign: "center",
+        color: '$white',
+        textAlign: 'center',
 
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "3rem 0",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '3rem 0',
 
-        height: "70vh",
+        height: '70vh',
         li: {
-          fontSize: "1.6rem",
-          fontWeight: "bold",
+          fontSize: '1.6rem',
+          fontWeight: 'bold',
         },
       },
     },
   },
 
-  display: "flex",
-  listStyleType: "none",
-  gap: "0 2rem",
-  color: "$brandBlue800",
+  display: 'flex',
+  listStyleType: 'none',
+  gap: '0 2rem',
+  color: '$brandBlue800',
 
-  "@tablet": {
-    display: "none",
+  '@tablet': {
+    display: 'none',
   },
 });
 
-export const Button = styled("button", {
-  backgroundColor: "transparent",
-  border: "1px solid $brandBlue800",
-  borderRadius: "40px",
-  cursor: "pointer",
-  padding: "0.625rem 1.5rem",
+export const Button = styled('button', {
+  backgroundColor: 'transparent',
+  border: '1px solid $brandBlue800',
+  borderRadius: '40px',
+  cursor: 'pointer',
+  padding: '0.625rem 1.5rem',
 
-  "@tablet": {
-    display: "none",
+  '@tablet': {
+    display: 'none',
   },
 
   variants: {
     color: {
       BrandBlue: {
-        borderColor: "$brandBlue800",
-        color: "$brandBlue800",
+        borderColor: '$brandBlue800',
+        color: '$brandBlue800',
       },
       White: {
-        borderColor: "$white",
-        color: "$white",
+        borderColor: '$white',
+        color: '$white',
       },
     },
   },
 });
 
-export const Menu = styled("section", {
+export const Menu = styled('section', {
   variants: {
     Appearance: {
       fullScreen: {
-        position: "absolute",
+        position: 'absolute',
         top: 0,
         left: 0,
 
-        height: "100vh",
-        width: "100vw",
+        height: '100vh',
+        width: '100vw',
 
-        backgroundColor: "$brandBlue800",
+        backgroundColor: '$brandBlue800',
 
         img: {
-          padding: "0.4rem 2rem",
+          padding: '0.4rem 2rem',
         },
       },
       hidden: {},
     },
   },
 
-  display: "none",
+  display: 'none',
 
-  "@tablet": {
-    display: "block",
+  '@tablet': {
+    display: 'block',
   },
 });
 
-export const Hamburger = styled("div", {
-  "@tablet": {
-    width: "30px",
-    height: "30px",
-    marginRight: "10px",
-    position: "absolute",
+export const Hamburger = styled('div', {
+  '@tablet': {
+    width: '30px',
+    height: '30px',
+    marginRight: '10px',
+    position: 'absolute',
     right: 48,
     top: 14,
 
@@ -158,15 +158,15 @@ export const Hamburger = styled("div", {
   },
 });
 
-export const ButtonMenu = styled("button", {
-  borderRadius: "40px",
-  border: "none",
-  cursor: "pointer",
-  color: "$brandBlue800",
-  padding: "1rem 2rem",
+export const ButtonMenu = styled('button', {
+  borderRadius: '40px',
+  border: 'none',
+  cursor: 'pointer',
+  color: '$brandBlue800',
+  padding: '1rem 2rem',
 });
 
-export const Footer = styled("footer", {
-  display: "flex",
-  justifyContent: "center",
+export const Footer = styled('footer', {
+  display: 'flex',
+  justifyContent: 'center',
 });

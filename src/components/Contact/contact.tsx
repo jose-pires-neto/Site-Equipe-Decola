@@ -1,10 +1,10 @@
-import { ContactSection, ContactContent } from "./contactStyle";
-import Image from "next/image";
-import ContactImage from "../../assets/contactUs.png";
-import WhatsIcon from "../../assets/icons/whatsIcon.svg";
-import MapIcon from "../../assets/icons/mapIcon.svg";
-import EmailIcon from "../../assets/icons/emailIcon.svg";
-import Link from "next/link";
+import { ContactSection, ContactContent } from './contactStyle';
+import Image from 'next/image';
+import ContactImage from '../../assets/contactUs.png';
+import WhatsIcon from '../../assets/icons/whatsIcon.svg';
+import MapIcon from '../../assets/icons/mapIcon.svg';
+import EmailIcon from '../../assets/icons/emailIcon.svg';
+import Link from 'next/link';
 
 export default function Contact() {
   return (

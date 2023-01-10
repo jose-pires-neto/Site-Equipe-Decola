@@ -1,6 +1,6 @@
-import { AboutSection, AboutContent } from "./aboutStyle";
-import Image from "next/image";
-import AboutImage from "../../assets/AboutImage.svg";
+import { AboutSection, AboutContent } from './aboutStyle';
+import Image from 'next/image';
+import AboutImage from '../../assets/AboutImage.svg';
 
 export default function About() {
   return (

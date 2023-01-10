@@ -89,6 +89,11 @@ export const ContactContent = styled('div', {
     gap: '0.5rem',
     cursor: 'pointer',
 
+    '&:hover': {
+      backgroundColor: '$brandBlueHover',
+      transition: '0.4s',
+    },
+
     img: {
       width: '1.6rem',
       height: '1.6rem',

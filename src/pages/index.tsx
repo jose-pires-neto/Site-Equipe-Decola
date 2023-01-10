@@ -1,13 +1,16 @@
-import About from "../components/AboutUs/about";
-import Contact from "../components/Contact/contact";
-import Hero from "../components/Hero/hero";
-import Services from "../components/ServicesSection/service";
-import Info from "../components/Info/info";
+import About from '../components/AboutUs/about';
+import Contact from '../components/Contact/contact';
+import Hero from '../components/Hero/hero';
+import Services from '../components/ServicesSection/service';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
-      <main style={{ backgroundColor: "#F0F8FF" }}>
+      <Head>
+        <title>Equipe Decola</title>
+      </Head>
+      <main style={{ backgroundColor: '#F0F8FF' }}>
         <Hero />
         <Services />
         <About />

@@ -1,12 +1,12 @@
-import Image from "next/image";
-import { ServicesSection, ServicesField, ServicesCard } from "./servicesStyle";
-import browser from "../../assets/icons/landingPageIcon.svg";
-import bulb from "../../assets/icons/marketingIcon.svg";
-import code from "../../assets/icons/siteIcon.svg";
-import presentation from "../../assets/icons/criacaoDeConteudoIcon.svg";
-import strategy from "../../assets/icons/identidadeVisualIcon.svg";
-import thumbsUp from "../../assets/icons/socialMediaIcon.svg";
-import Link from "next/link";
+import Image from 'next/image';
+import { ServicesSection, ServicesField, ServicesCard } from './servicesStyle';
+import browser from '../../assets/icons/landingPageIcon.svg';
+import bulb from '../../assets/icons/marketingIcon.svg';
+import code from '../../assets/icons/siteIcon.svg';
+import presentation from '../../assets/icons/criacaoDeConteudoIcon.svg';
+import strategy from '../../assets/icons/identidadeVisualIcon.svg';
+import thumbsUp from '../../assets/icons/socialMediaIcon.svg';
+import Link from 'next/link';
 
 export default function Services() {
   return (
