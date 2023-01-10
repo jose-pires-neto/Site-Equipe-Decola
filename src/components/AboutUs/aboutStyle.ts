@@ -46,6 +46,13 @@ export const AboutContent = styled('div', {
   maxWidth: '55rem',
   padding: '1rem',
 
+  span: {
+    color: '$brandBlue800',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    paddingBottom: '1rem',
+  },
+
   h2: {
     fontSize: '2.6rem',
     textAlign: 'left',
