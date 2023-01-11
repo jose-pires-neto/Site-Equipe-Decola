@@ -82,12 +82,16 @@ export function Header() {
                 height={64}
               />
               <Navbar isHidden="false">
-                <li>Início</li>
-                <li>Sobre</li>
-                <Link href="#service">
-                  <li>Serviços</li>
+                <Link href="/">
+                  <li onClick={() => setMenuOn(!menuOn)}>Início</li>
                 </Link>
-                <li>Depoimentos</li>
+                <Link href="#about">
+                  <li onClick={() => setMenuOn(!menuOn)}>Sobre</li>
+                </Link>
+                <Link href="#services">
+                  <li onClick={() => setMenuOn(!menuOn)}>Serviços</li>
+                </Link>
+                <li onClick={() => setMenuOn(!menuOn)}>Depoimentos</li>
                 <Link href="https://api.whatsapp.com/send?phone=5591984490280">
                   <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
                 </Link>
