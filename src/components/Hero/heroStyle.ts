@@ -72,12 +72,14 @@ export const SlideCaption = styled('div', {
     fontSize: '6rem',
     marginBottom: '1rem',
     maxWidth: '70rem',
+    textShadow: '2px 1px 4px rgba(0,0,0,0.52);',
   },
 
   h3: {
     maxWidth: '46rem',
     fontSize: '2rem',
     color: '$white',
+    textShadow: '2px 1px 4px rgba(0,0,0,0.52);',
   },
 
   '@laptop': {

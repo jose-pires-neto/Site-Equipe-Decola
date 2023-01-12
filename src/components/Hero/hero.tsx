@@ -87,7 +87,7 @@ export default function Hero() {
           </SwiperSlide>
         </Swiper>
       </Carousel>
-      <Info />
+      {/* <Info /> */}
     </>
   );
 }
