@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useMemo } from 'react';
 import { InfoSection, InfoCard, InfoContent, ContainerInfo } from './infoStyle';
 
@@ -17,6 +16,7 @@ export default function Info() {
     calcularMeses();
     const interval = setInterval(calcularMeses, 30 * 24 * 60 * 60 * 1000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
