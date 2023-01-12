@@ -60,7 +60,7 @@ export const ServicesField = styled('div', {
 });
 
 export const ServicesCard = styled('div', {
-  maxWidth: '18rem',
+  maxWidth: '22rem',
   height: '13rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',
@@ -86,7 +86,7 @@ export const ServicesCard = styled('div', {
   },
   '&:hover': {
     transition: 'all 0.3s ease-in-out',
-    transform: 'scale(1.1)',
+    transform: 'scale(1.05)',
     backgroundColor: '$brandBlue300',
 
     h3: {
@@ -95,6 +95,10 @@ export const ServicesCard = styled('div', {
     p: {
       color: '$brandBlue800',
     },
+  },
+
+  '@laptop': {
+    maxWidth: '18rem',
   },
 
   '@mobile': {
