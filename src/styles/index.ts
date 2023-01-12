@@ -29,5 +29,6 @@ export const {
     tablet: '(max-width: 820px)',
     laptopTab: '(max-width: 975px)',
     laptop: '(max-width: 1270px)',
+    largeLaptop: '(max-width: 1440px)',
   },
 });

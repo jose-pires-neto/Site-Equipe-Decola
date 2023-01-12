@@ -76,6 +76,7 @@ export default function Hero() {
             <SlideContent>
               <SlideCaption ColorText={'brandBlue'}>
                 <h1>Conquiste a sua visibilidade na web.</h1>
+                <hr />
                 <Link href="/services/landing_page">
                   <ButtonSlide
                     backgroundColor={'transparent'}
@@ -87,7 +88,7 @@ export default function Hero() {
           </SwiperSlide>
         </Swiper>
       </Carousel>
-      <Info />
+      {/* <Info /> */}
     </>
   );
 }

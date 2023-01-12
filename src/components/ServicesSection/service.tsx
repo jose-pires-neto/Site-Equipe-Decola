@@ -16,11 +16,11 @@ export default function Services() {
       <ServicesField>
         <Link href="/services/marketing">
           <ServicesCard>
-            <Image src={bulb} alt="logo-bulb" />
+            <Image src={bulb} alt="logo-bulb" height={36} />
             <h3>Consultoria de Marketing</h3>
             <p>
-              A consultoria de marketing ajuda a desenvolver uma estratégia de
-              marketing eficaz. de a ajudar os clientes.
+              A consultoria de marketing ajuda as empresas a atingir objetivos
+              de negócios, como atrair novos clientes e fortalecer a sua marca.
             </p>
           </ServicesCard>
         </Link>
