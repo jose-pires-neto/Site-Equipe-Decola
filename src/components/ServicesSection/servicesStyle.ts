@@ -60,7 +60,7 @@ export const ServicesField = styled('div', {
 });
 
 export const ServicesCard = styled('div', {
-  maxWidth: '22rem',
+  maxWidth: '18rem',
   height: '13rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',

@@ -3,7 +3,15 @@ import { styled } from '../../styles';
 export const Carousel = styled('section', {
   overflow: 'hidden',
   height: 'auto',
-  maxHeight: '50rem',
+  maxHeight: '46rem',
+
+  '@largeLaptop': {
+    maxHeight: '42rem',
+  },
+
+  '@laptop': {
+    maxHeight: '31rem',
+  },
 
   '@largeMobile': {
     height: 'auto',
@@ -47,6 +55,7 @@ export const SlideCaption = styled('div', {
       brandBlue: {
         h1: {
           color: '$brandBlue800',
+          textShadow: '2px 1px 4px rgba(0,0,0,0.42);',
         },
       },
       lightBlue: {
@@ -73,6 +82,14 @@ export const SlideCaption = styled('div', {
     marginBottom: '1rem',
     maxWidth: '70rem',
     textShadow: '2px 1px 4px rgba(0,0,0,0.52);',
+  },
+
+  hr: {
+    color: '$white',
+    maxWidth: '40rem',
+    margin: '1rem 0',
+    border: '1px solid white',
+    boxShadow: 'rgb(0 0 0 / 45%) 2px 1px 4px',
   },
 
   h3: {
@@ -102,9 +119,14 @@ export const SlideCaption = styled('div', {
     marginLeft: '3rem',
 
     h1: {
-      fontSize: '3.6rem',
+      fontSize: '3rem',
       marginBottom: '2rem',
     },
+
+    hr: {
+      maxWidth: '26rem',
+    },
+
     h3: {
       fontSize: '1.6rem',
       maxWidth: '34rem',
@@ -117,6 +139,11 @@ export const SlideCaption = styled('div', {
       fontSize: '2.4rem',
       marginBottom: '1rem',
     },
+
+    hr: {
+      maxWidth: '20rem',
+    },
+
     h3: {
       fontSize: '1.3rem',
       maxWidth: '23rem',
