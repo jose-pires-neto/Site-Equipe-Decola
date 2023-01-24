@@ -36,15 +36,8 @@ export const SlideContent = styled('div', {
     height: '36rem',
 
     img: {
-      width: '48rem',
-      height: '36rem',
-    },
-  },
-
-  '@mobile': {
-    img: {
-      width: '40rem',
-      height: '30rem',
+      width: '30rem',
+      height: '26rem',
     },
   },
 });
@@ -165,7 +158,7 @@ export const ButtonSlide = styled('button', {
       transparent: {
         backgroundColor: 'transparent',
         color: '$brandBlue800',
-        border: '1px solid #0090A5',
+        border: '2px solid #0090A5',
         '&:hover': {
           backgroundColor: '$brandBlueHover',
           color: '$white',
@@ -196,8 +189,8 @@ export const ButtonSlide = styled('button', {
   },
 
   '@largeMobile': {
-    width: '14rem',
-    height: '3.4rem',
-    fontSize: '1.2rem',
+    width: '10rem',
+    height: '3rem',
+    fontSize: '1rem',
   },
 });
