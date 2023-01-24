@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction } from 'react';
 import Image from 'next/image';
 import { Turn } from 'hamburger-react';
 import Link from 'next/link';
@@ -22,6 +22,7 @@ import {
 export function Header() {
   const [scroll, setScroll] = useState(0);
   const [menuOn, setMenuOn] = useState(false);
+  const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -69,8 +70,16 @@ export function Header() {
           </Button>
         </Link>
         <Menu Appearance={menuOn ? 'fullScreen' : 'hidden'}>
-          <Hamburger onClick={() => setMenuOn(!menuOn)}>
-            <Turn color={scroll > 50 || menuOn ? 'white' : '#0090A5'} />
+          <Hamburger
+            onClick={() => {
+              setMenuOn(!menuOn);
+              setHamburgerIsOpen(!hamburgerIsOpen);
+            }}
+          >
+            <Turn
+              color={scroll > 50 || menuOn ? 'white' : '#0090A5'}
+              toggled={hamburgerIsOpen}
+            />
           </Hamburger>
 
           {menuOn && (
@@ -82,17 +91,41 @@ export function Header() {
                 height={64}
               />
               <Navbar isHidden="false">
-                <Link href="/">
-                  <li onClick={() => setMenuOn(!menuOn)}>Início</li>
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setMenuOn(!menuOn);
+                    setHamburgerIsOpen(!hamburgerIsOpen);
+                  }}
+                >
+                  <li>Início</li>
                 </Link>
-                <Link href="#about">
-                  <li onClick={() => setMenuOn(!menuOn)}>Sobre</li>
+                <Link
+                  href="#about"
+                  onClick={() => {
+                    setMenuOn(!menuOn);
+                    setHamburgerIsOpen(!hamburgerIsOpen);
+                  }}
+                >
+                  <li>Sobre</li>
                 </Link>
-                <Link href="#services">
-                  <li onClick={() => setMenuOn(!menuOn)}>Serviços</li>
+                <Link
+                  href="#services"
+                  onClick={() => {
+                    setMenuOn(!menuOn);
+                    setHamburgerIsOpen(!hamburgerIsOpen);
+                  }}
+                >
+                  <li>Serviços</li>
                 </Link>
-                <li onClick={() => setMenuOn(!menuOn)}>Depoimentos</li>
-                <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+                <li>Depoimentos</li>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=5591984490280"
+                  onClick={() => {
+                    setMenuOn(!menuOn);
+                    setHamburgerIsOpen(!hamburgerIsOpen);
+                  }}
+                >
                   <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
                 </Link>
                 <Footer>
