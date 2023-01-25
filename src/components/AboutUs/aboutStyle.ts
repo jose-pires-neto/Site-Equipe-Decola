@@ -2,14 +2,14 @@ import { styled } from '../../styles/index';
 
 export const AboutSection = styled('section', {
   display: 'flex',
-  backgroundColor: '$brandBlue300',
+  gap: '0 10rem',
+  backgroundColor: '$brandBlue200',
   justifyContent: 'center',
   padding: '1rem',
 
   img: {
     borderRadius: '10px',
     padding: '4rem 1rem',
-    width: '60rem',
   },
 
   '@laptop': {
@@ -43,20 +43,29 @@ export const AboutContent = styled('div', {
   alignContent: 'center',
   justifyContent: 'center',
 
-  maxWidth: '55rem',
+  maxWidth: '40rem',
   padding: '1rem',
 
   span: {
     color: '$brandBlue800',
+    display: 'flex',
+    alignItems: 'center',
     fontSize: '1rem',
     fontWeight: 'bold',
+    width: '100%',
     paddingBottom: '1rem',
+
+    hr: {
+      width: '84%',
+      height: '2px',
+      border: 'none',
+      backgroundColor: '$brandBlue800',
+    },
   },
 
   h2: {
     fontSize: '2.6rem',
     textAlign: 'left',
-    maxWidth: '55rem',
     fontFamily: 'Orbitron',
     marginBottom: '1.7rem',
   },
@@ -64,7 +73,6 @@ export const AboutContent = styled('div', {
     fontSize: '1.5rem',
     marginBottom: '1.2rem',
     textAlign: 'justify',
-    maxWidth: '44rem',
   },
 
   '@laptopTab': {

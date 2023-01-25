@@ -1,13 +1,16 @@
 import { AboutSection, AboutContent } from './aboutStyle';
 import Image from 'next/image';
-import AboutImage from '../../assets/AboutImage.svg';
+import AboutGraph from '../../assets/grafismoAbout.png';
 
 export default function About() {
   return (
     <AboutSection id="about">
-      <Image alt="abut-me" src={AboutImage} />
+      <Image alt="abut-me" src={AboutGraph} />
       <AboutContent>
-        <span>SOBRE NÓS</span>
+        <span>
+          {`SOBRE NÓS ]`}
+          <hr />
+        </span>
         <h2>Entenda quem somos e por que existimos.</h2>
         <p>
           Somos a Equipe Decola. Uma empresa especializada em serviços de
