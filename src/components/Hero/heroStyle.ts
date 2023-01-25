@@ -1,9 +1,10 @@
 import { styled } from '../../styles';
 
 export const Carousel = styled('section', {
+  marginTop: '3rem',
   overflow: 'hidden',
   height: 'auto',
-  maxHeight: '46rem',
+  maxHeight: '54rem',
 
   '@largeLaptop': {
     maxHeight: '42rem',
@@ -23,6 +24,10 @@ export const SlideContent = styled('div', {
   textAlign: 'left',
   height: 'auto',
 
+  video: {
+    width: '100%',
+  },
+
   img: {
     width: '100%',
     height: '100%',
@@ -30,21 +35,22 @@ export const SlideContent = styled('div', {
 
   '@tablet': {
     height: '40rem',
+
+    video: {
+      width: '56rem',
+    },
   },
 
   '@largeMobile': {
     height: '36rem',
 
-    img: {
-      width: '48rem',
-      height: '36rem',
+    video: {
+      width: '46.2rem',
     },
-  },
 
-  '@mobile': {
     img: {
-      width: '40rem',
-      height: '30rem',
+      width: '32rem',
+      height: '26rem',
     },
   },
 });
@@ -72,7 +78,7 @@ export const SlideCaption = styled('div', {
   },
 
   position: 'absolute',
-  marginTop: '8rem',
+  marginTop: '6rem',
   marginLeft: '6rem',
 
   h1: {
@@ -93,14 +99,14 @@ export const SlideCaption = styled('div', {
   },
 
   h3: {
-    maxWidth: '46rem',
+    maxWidth: '48rem',
     fontSize: '2rem',
     color: '$white',
     textShadow: '2px 1px 4px rgba(0,0,0,0.52);',
   },
 
   '@laptop': {
-    marginTop: '6rem',
+    marginTop: '4rem',
 
     h1: {
       fontSize: '5.2rem',
@@ -115,7 +121,7 @@ export const SlideCaption = styled('div', {
   },
 
   '@tablet': {
-    marginTop: '8rem',
+    marginTop: '4rem',
     marginLeft: '3rem',
 
     h1: {
@@ -165,7 +171,7 @@ export const ButtonSlide = styled('button', {
       transparent: {
         backgroundColor: 'transparent',
         color: '$brandBlue800',
-        border: '1px solid #0090A5',
+        border: '2px solid #0090A5',
         '&:hover': {
           backgroundColor: '$brandBlueHover',
           color: '$white',
@@ -196,8 +202,8 @@ export const ButtonSlide = styled('button', {
   },
 
   '@largeMobile': {
-    width: '14rem',
-    height: '3.4rem',
-    fontSize: '1.2rem',
+    width: '10rem',
+    height: '3rem',
+    fontSize: '1rem',
   },
 });

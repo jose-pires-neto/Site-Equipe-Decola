@@ -12,8 +12,8 @@ export default function Home() {
       </Head>
       <main style={{ backgroundColor: '#F0F8FF' }}>
         <Hero />
-        <Services />
         <About />
+        <Services />
         <Contact />
       </main>
     </>

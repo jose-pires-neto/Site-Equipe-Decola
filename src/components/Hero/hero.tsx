@@ -7,10 +7,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import carrossel1 from '../../assets/gif1.gif';
+// import carrossel1 from '../../assets/gif1.gif';
 import carrossel2 from '../../assets/carrossel2.png';
 import carrossel3 from '../../assets/carrossel3.png';
-import Info from '../Info/info';
+
 import Link from 'next/link';
 
 export default function Hero() {
@@ -56,7 +56,10 @@ export default function Hero() {
                   negócio decole.
                 </h3>
               </SlideCaption>
-              <Image src={carrossel1} alt="" />
+              <video autoPlay muted loop>
+                <source src="/video.mp4" type="video/mp4" />
+              </video>
+              {/* <Image src={carrossel1} alt="" /> */}
             </SlideContent>
           </SwiperSlide>
           <SwiperSlide>
@@ -88,7 +91,6 @@ export default function Hero() {
           </SwiperSlide>
         </Swiper>
       </Carousel>
-      {/* <Info /> */}
     </>
   );
 }
