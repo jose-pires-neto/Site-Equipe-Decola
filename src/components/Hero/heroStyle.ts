@@ -99,7 +99,7 @@ export const SlideCaption = styled('div', {
   },
 
   h3: {
-    maxWidth: '46rem',
+    maxWidth: '48rem',
     fontSize: '2rem',
     color: '$white',
     textShadow: '2px 1px 4px rgba(0,0,0,0.52);',
