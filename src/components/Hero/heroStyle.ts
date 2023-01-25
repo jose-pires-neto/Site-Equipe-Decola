@@ -1,9 +1,10 @@
 import { styled } from '../../styles';
 
 export const Carousel = styled('section', {
+  marginTop: '3rem',
   overflow: 'hidden',
   height: 'auto',
-  maxHeight: '46rem',
+  maxHeight: '54rem',
 
   '@largeLaptop': {
     maxHeight: '42rem',
@@ -23,6 +24,10 @@ export const SlideContent = styled('div', {
   textAlign: 'left',
   height: 'auto',
 
+  video: {
+    width: '100%',
+  },
+
   img: {
     width: '100%',
     height: '100%',
@@ -30,13 +35,21 @@ export const SlideContent = styled('div', {
 
   '@tablet': {
     height: '40rem',
+
+    video: {
+      width: '56rem',
+    },
   },
 
   '@largeMobile': {
     height: '36rem',
 
+    video: {
+      width: '46.2rem',
+    },
+
     img: {
-      width: '30rem',
+      width: '32rem',
       height: '26rem',
     },
   },
@@ -65,7 +78,7 @@ export const SlideCaption = styled('div', {
   },
 
   position: 'absolute',
-  marginTop: '8rem',
+  marginTop: '6rem',
   marginLeft: '6rem',
 
   h1: {
@@ -93,7 +106,7 @@ export const SlideCaption = styled('div', {
   },
 
   '@laptop': {
-    marginTop: '6rem',
+    marginTop: '4rem',
 
     h1: {
       fontSize: '5.2rem',
@@ -108,7 +121,7 @@ export const SlideCaption = styled('div', {
   },
 
   '@tablet': {
-    marginTop: '8rem',
+    marginTop: '4rem',
     marginLeft: '3rem',
 
     h1: {
