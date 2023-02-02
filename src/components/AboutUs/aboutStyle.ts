@@ -16,6 +16,7 @@ export const AboutContent = styled('div', {
   },
 
   '@laptop': {
+    gap: '5rem',
     img: {
       width: '28rem',
     },
@@ -28,14 +29,12 @@ export const AboutContent = styled('div', {
   },
 
   '@tablet': {
-    flexDirection: 'column',
+    flexDirection: 'column-reverse',
     alignItems: 'center',
     justifyContent: 'center',
 
-    img: {
-      padding: '1rem 0',
-      width: '20rem',
-      height: 'auto',
+    '.imageContent': {
+      display: 'none',
     },
   },
 });
@@ -70,12 +69,30 @@ export const AboutText = styled('div', {
     fontSize: '2.6rem',
     textAlign: 'left',
     fontFamily: 'Orbitron',
-    marginBottom: '1.7rem',
+    marginBottom: '4rem',
+  },
+  '.imageText': {
+    display: 'none',
   },
   p: {
-    fontSize: '1.5rem',
+    fontSize: '2rem',
     marginBottom: '1.2rem',
     textAlign: 'justify',
+  },
+
+  '@laptop': {
+    span: {
+      hr: {
+        width: '70%',
+      },
+    },
+
+    h2: {
+      fontSize: '2.2rem',
+    },
+    p: {
+      fontSize: '1.4rem',
+    },
   },
 
   '@laptopTab': {
@@ -87,37 +104,18 @@ export const AboutText = styled('div', {
       fontSize: '1.2rem',
     },
   },
-});
 
-export const AboutTopcs = styled('div', {
-  display: 'flex',
-  justifyContent: 'center',
-  gap: '10rem',
-  alignItems: 'baseline',
-  paddingBottom: '6rem',
-  paddingTop: '2rem',
-
-  div: {
-    display: 'flex',
-    alignItems: 'flex-end',
-    flexWrap: 'wrap',
-    maxWidth: '18rem',
-
-    img: {
-      padding: '0',
-    },
-
+  '@tablet': {
+    alignItems: 'center',
     h2: {
-      fontSize: '2.5rem',
-      fontFamily: 'Orbitron',
-      paddingBottom: '0.2rem',
-      color: '$brandBlue800',
+      marginBottom: '1rem',
     },
-    hr: {
-      width: '100%',
-      height: '2px',
-      border: 'none',
-      backgroundColor: '$brandBlue800',
+
+    '.imageText': {
+      display: 'block',
+      height: 'auto',
+      width: '18rem',
+      padding: '1rem 0',
     },
   },
 });

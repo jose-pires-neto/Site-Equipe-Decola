@@ -70,6 +70,7 @@ export const ServicesCard = styled('div', {
   alignItems: 'flex-start',
   justifyContent: 'center',
   backgroundColor: '$white',
+  transition: 'all 0.3s ease-in-out',
   h3: {
     marginBottom: '1rem',
     fontSize: '1.3rem',
@@ -85,9 +86,8 @@ export const ServicesCard = styled('div', {
     paddingBottom: '0.3rem',
   },
   '&:hover': {
-    transition: 'all 0.3s ease-in-out',
     transform: 'scale(1.05)',
-    backgroundColor: '$brandBlue300',
+    backgroundColor: '$brandBlue200',
 
     h3: {
       color: '$brandBlueHover',
