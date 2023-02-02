@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import carrossel1 from '../../assets/gif1.gif';
 import carrossel2 from '../../assets/carrossel2.png';
 import carrossel3 from '../../assets/carrossel3.png';
 
@@ -59,7 +58,6 @@ export default function Hero() {
               <video autoPlay muted loop>
                 <source src="/video.mp4" type="video/mp4" />
               </video>
-              {/* <Image src={carrossel1} alt="" /> */}
             </SlideContent>
           </SwiperSlide>
           <SwiperSlide>

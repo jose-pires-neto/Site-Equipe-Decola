@@ -1,25 +1,26 @@
-import { AboutSection, AboutContent } from './aboutStyle';
+import { AboutSection, AboutContent, AboutText } from './aboutStyle';
 import Image from 'next/image';
-import AboutImage from '../../assets/AboutImage.svg';
+
+import AboutGraph from '../../assets/grafismoAbout.png';
 
 export default function About() {
   return (
     <AboutSection id="about">
-      <Image alt="abut-me" src={AboutImage} />
       <AboutContent>
-        <span>SOBRE NÓS</span>
-        <h2>Entenda quem somos e por que existimos.</h2>
-        <p>
-          Somos a Equipe Decola. Uma empresa especializada em serviços de
-          marketing, melhorando os resultados dos negócios com planos e
-          estratégias personalizadas de acordo com o perfil de cada empresa
-        </p>
-        <p>
-          Acreditamos que o sucesso do nosso negócio depende do sucesso de
-          nossos clientes. Por isso, nos dedicamos a fornecer soluções de
-          marketing de alta qualidade que ajudam nossos clientes a atingir seus
-          objetivos de negócios e crescer.
-        </p>
+        <Image alt="about me" src={AboutGraph} className="imageContent" />
+        <AboutText>
+          <span>
+            {`SOBRE NÓS ]`}
+            <hr />
+          </span>
+          <h2>Venha fazer o seu negócio decolar conosco!</h2>
+          <Image alt="about me" src={AboutGraph} className="imageText" />
+          <p>
+            A Equipe Decola é uma empresa especializada em serviços de
+            marketing, melhorando os resultados dos negócios com planos e
+            estratégias personalizados de acordo com o perfil de cada empresa.
+          </p>
+        </AboutText>
       </AboutContent>
     </AboutSection>
   );
