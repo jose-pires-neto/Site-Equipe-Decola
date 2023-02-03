@@ -70,7 +70,7 @@ export default function Hero() {
                   >{`SAIBA MAIS >>>`}</ButtonSlide>
                 </Link>
               </SlideCaption>
-              <Image src={carrossel2} alt=""></Image>
+              <Image src={carrossel2} alt="" placeholder="blur"></Image>
             </SlideContent>
           </SwiperSlide>
           <SwiperSlide>
@@ -84,7 +84,7 @@ export default function Hero() {
                   >{`SAIBA MAIS >>>`}</ButtonSlide>
                 </Link>
               </SlideCaption>
-              <Image src={carrossel3} alt=""></Image>
+              <Image src={carrossel3} alt="" placeholder="blur"></Image>
             </SlideContent>
           </SwiperSlide>
         </Swiper>
