@@ -36,16 +36,16 @@ export default function Clients() {
         <h1>Nossos clientes, parceiros de sucesso.</h1>
         <ClientsContent>
           <ClientsLogos>
-            <Image src={clientOne} alt="" />
+            <Image src={clientOne} alt="" placeholder="blur" />
           </ClientsLogos>
           <ClientsLogos>
-            <Image src={clientTwo} alt="" />
+            <Image src={clientTwo} alt="" placeholder="blur" />
           </ClientsLogos>
           <ClientsLogos>
-            <Image src={clientThree} alt="" />
+            <Image src={clientThree} alt="" placeholder="blur" />
           </ClientsLogos>
           <ClientsLogos>
-            <Image src={clientFour} alt="" />
+            <Image src={clientFour} alt="" placeholder="blur" />
           </ClientsLogos>
         </ClientsContent>
       </ClientsField>

@@ -26,7 +26,7 @@ export default function Contact() {
           </button>
         </Link>
       </ContactContent>
-      <Image src={ContactImage} alt="conteact-image" />
+      <Image src={ContactImage} alt="conteact-image" placeholder="blur" />
     </ContactSection>
   );
 }
