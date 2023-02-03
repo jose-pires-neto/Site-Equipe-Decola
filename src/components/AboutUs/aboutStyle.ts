@@ -117,5 +117,11 @@ export const AboutText = styled('div', {
       width: '18rem',
       padding: '1rem 0',
     },
+
+    span: {
+      hr: {
+        width: '67%',
+      },
+    },
   },
 });
