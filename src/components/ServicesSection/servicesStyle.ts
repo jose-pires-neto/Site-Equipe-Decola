@@ -8,6 +8,7 @@ export const ServicesSection = styled('section', {
   alignItems: 'center',
   padding: '2.5rem',
   paddingTop: '4rem',
+
   a: {
     textDecoration: 'none',
     color: 'inherit',
@@ -56,7 +57,7 @@ export const ServicesField = styled('div', {
   maxWidth: '85vw',
   gap: '2.5rem 2rem',
   marginTop: '3rem',
-  marginBottom: '10rem',
+  marginBottom: '2rem',
 });
 
 export const ServicesCard = styled('div', {

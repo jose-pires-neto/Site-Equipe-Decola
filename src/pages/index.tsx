@@ -1,6 +1,7 @@
 import About from '../components/AboutUs/about';
 import Clients from '../components/Clients/clients';
 import Contact from '../components/Contact/contact';
+import Decola from '../components/Decola/decola';
 import Hero from '../components/Hero/hero';
 import Services from '../components/ServicesSection/service';
 import Head from 'next/head';
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Services />
         <Clients />
+        <Decola />
         <Contact />
       </main>
     </>

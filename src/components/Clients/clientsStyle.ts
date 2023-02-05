@@ -48,6 +48,10 @@ export const ClientsContent = styled('div', {
   justifyContent: 'center',
   gap: '2.2rem',
   padding: '2.2rem 6rem 11rem 6rem',
+
+  '@largeMobile': {
+    padding: '2.2rem 2rem 11rem 2rem',
+  },
 });
 
 export const ClientsLogos = styled('div', {
