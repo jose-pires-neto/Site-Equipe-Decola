@@ -4,15 +4,15 @@ import {
   TextAndImageContainer,
   ContentContainer,
   IconsContainer,
-} from "../../components/ServicesPage/containerStyles";
-import Image from "next/image";
-import BudgetButton from "../../components/BudgetButton/budgetButton";
+} from '../../components/ServicesPage/containerStyles';
+import Image from 'next/image';
+import BudgetButton from '../../components/BudgetButton/budgetButton';
 
-import ProducaoDeConteudoImage from "../../assets/pages/producaoDeConteudoImage.svg";
-import engajamentoIcon from "../../assets/icons/producaoDeConteudoIcons/engajamentoIcon.svg";
-import SEOIcon from "../../assets/icons/producaoDeConteudoIcons/SEOIcon.svg";
-import autoridadeIcon from "../../assets/icons/producaoDeConteudoIcons/autoridadeIcon.svg";
-import leadsIcon from "../../assets/icons/producaoDeConteudoIcons/leadsIcon.svg";
+import ProducaoDeConteudoImage from '../../assets/pages/producaoDeConteudoImage.png';
+import engajamentoIcon from '../../assets/icons/producaoDeConteudoIcons/engajamentoIcon.svg';
+import SEOIcon from '../../assets/icons/producaoDeConteudoIcons/SEOIcon.svg';
+import autoridadeIcon from '../../assets/icons/producaoDeConteudoIcons/autoridadeIcon.svg';
+import leadsIcon from '../../assets/icons/producaoDeConteudoIcons/leadsIcon.svg';
 
 export default function ProducaoDeConteudo() {
   return (
@@ -24,6 +24,7 @@ export default function ProducaoDeConteudo() {
           <Image
             src={ProducaoDeConteudoImage}
             alt="producao-de-conteudo-image"
+            placeholder="blur"
           />
           <div>
             <p>

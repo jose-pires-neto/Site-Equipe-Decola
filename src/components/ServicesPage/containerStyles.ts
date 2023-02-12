@@ -95,6 +95,10 @@ export const TextAndImageContainer = styled('section', {
     padding: '1rem 0 0 3rem',
   },
 
+  img: {
+    borderRadius: '34px',
+  },
+
   '@tablet': {
     flexDirection: 'column',
     alignItems: 'center',

@@ -3,11 +3,11 @@ import {
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../components/ServicesPage/containerStyles";
-import Image from "next/image";
-import BudgetButton from "../../components/BudgetButton/budgetButton";
+} from '../../components/ServicesPage/containerStyles';
+import Image from 'next/image';
+import BudgetButton from '../../components/BudgetButton/budgetButton';
 
-import SocialMediaImage from "../../assets/pages/socialMediaImage.svg";
+import SocialMediaImage from '../../assets/pages/socialMediaImage.png';
 
 export default function SocialMedia() {
   return (
@@ -16,7 +16,11 @@ export default function SocialMedia() {
         <h1>Social Media</h1>
         <hr />
         <TextAndImageContainer>
-          <Image src={SocialMediaImage} alt="social-media-image" />
+          <Image
+            src={SocialMediaImage}
+            alt="social-media-image"
+            placeholder="blur"
+          />
           <div>
             <p>
               O social media é uma parte importante da estratégia de marketing

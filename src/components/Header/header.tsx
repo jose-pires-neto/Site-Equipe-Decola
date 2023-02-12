@@ -1,4 +1,4 @@
-import { useState, useEffect, SetStateAction } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Turn } from 'hamburger-react';
 import Link from 'next/link';
@@ -22,7 +22,6 @@ import {
 export function Header() {
   const [scroll, setScroll] = useState(0);
   const [menuOn, setMenuOn] = useState(false);
-  const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -56,10 +55,10 @@ export function Header() {
           <Link href="/">
             <li>Início</li>
           </Link>
-          <Link href="#about">
+          <Link href="/#about">
             <li>Sobre</li>
           </Link>
-          <Link href="#services">
+          <Link href="/#services">
             <li>Serviços</li>
           </Link>
           <li>Depoimentos</li>
@@ -73,12 +72,11 @@ export function Header() {
           <Hamburger
             onClick={() => {
               setMenuOn(!menuOn);
-              setHamburgerIsOpen(!hamburgerIsOpen);
             }}
           >
             <Turn
               color={scroll > 50 || menuOn ? 'white' : '#0090A5'}
-              toggled={hamburgerIsOpen}
+              toggled={menuOn}
             />
           </Hamburger>
 
@@ -95,7 +93,6 @@ export function Header() {
                   href="/"
                   onClick={() => {
                     setMenuOn(!menuOn);
-                    setHamburgerIsOpen(!hamburgerIsOpen);
                   }}
                 >
                   <li>Início</li>
@@ -104,7 +101,6 @@ export function Header() {
                   href="#about"
                   onClick={() => {
                     setMenuOn(!menuOn);
-                    setHamburgerIsOpen(!hamburgerIsOpen);
                   }}
                 >
                   <li>Sobre</li>
@@ -113,7 +109,6 @@ export function Header() {
                   href="#services"
                   onClick={() => {
                     setMenuOn(!menuOn);
-                    setHamburgerIsOpen(!hamburgerIsOpen);
                   }}
                 >
                   <li>Serviços</li>
@@ -123,7 +118,6 @@ export function Header() {
                   href="https://api.whatsapp.com/send?phone=5591984490280"
                   onClick={() => {
                     setMenuOn(!menuOn);
-                    setHamburgerIsOpen(!hamburgerIsOpen);
                   }}
                 >
                   <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>

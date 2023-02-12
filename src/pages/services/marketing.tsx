@@ -1,13 +1,13 @@
-import BudgetButton from "../../components/BudgetButton/budgetButton";
+import BudgetButton from '../../components/BudgetButton/budgetButton';
 import {
   ServiceSection,
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../components/ServicesPage/containerStyles";
-import MarketingImage from "../../assets/pages/marketingImage.svg";
+} from '../../components/ServicesPage/containerStyles';
+import MarketingImage from '../../assets/pages/marketingImage.png';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Marketing() {
   return (
@@ -16,7 +16,7 @@ export default function Marketing() {
         <h1>A Consultoria de Marketing</h1>
         <hr />
         <TextAndImageContainer>
-          <Image src={MarketingImage} alt="marketingImage" />
+          <Image src={MarketingImage} alt="marketingImage" placeholder="blur" />
           <div>
             <p>
               O objetivo da consultoria de marketing é ajudar a empresa a

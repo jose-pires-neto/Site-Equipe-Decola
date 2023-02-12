@@ -6,14 +6,14 @@ import {
   CriacaoDeSitesContainer,
   StepsCard,
   CardImage,
-} from "../../components/ServicesPage/containerStyles";
-import Image from "next/image";
-import BudgetButton from "../../components/BudgetButton/budgetButton";
+} from '../../components/ServicesPage/containerStyles';
+import Image from 'next/image';
+import BudgetButton from '../../components/BudgetButton/budgetButton';
 
-import CriacaoDeSitesImage from "../../assets/pages/criacaoDeSitesImage.svg";
-import TestsIcon from "../../assets/icons/testsIcon.svg";
-import Code from "../../assets/icons/siteIcon.svg";
-import Presentation from "../../assets/icons/criacaoDeConteudoIcon.svg";
+import CriacaoDeSitesImage from '../../assets/pages/criacaoDeSitesImage.png';
+import TestsIcon from '../../assets/icons/testsIcon.svg';
+import Code from '../../assets/icons/siteIcon.svg';
+import Presentation from '../../assets/icons/criacaoDeConteudoIcon.svg';
 
 export default function CriacaoDeConteudo() {
   return (
@@ -22,7 +22,11 @@ export default function CriacaoDeConteudo() {
         <h1>Criação de sites/blog</h1>
         <hr />
         <TextAndImageContainer>
-          <Image src={CriacaoDeSitesImage} alt="criação-de-sites-image" />
+          <Image
+            src={CriacaoDeSitesImage}
+            alt="criação-de-sites-image"
+            placeholder="blur"
+          />
           <div>
             <p>
               A criação de um site pode ser um processo complexo que envolve a
