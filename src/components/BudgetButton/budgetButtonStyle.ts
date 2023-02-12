@@ -25,6 +25,7 @@ export const Button = styled('button', {
   },
 
   '@tablet': {
+    maxWidth: '30rem',
     padding: '1rem',
     p: {
       fontSize: '1.4rem',
@@ -32,7 +33,7 @@ export const Button = styled('button', {
   },
 
   '@largeMobile': {
-    maxWidth: '25rem',
+    maxWidth: '22rem',
     marginBottom: '1.4rem',
     padding: '1rem 2.4rem',
     p: {
@@ -41,6 +42,7 @@ export const Button = styled('button', {
   },
 
   '@mobile': {
+    maxWidth: '18rem',
     padding: '1rem 2rem',
     p: {
       fontSize: '1rem',
