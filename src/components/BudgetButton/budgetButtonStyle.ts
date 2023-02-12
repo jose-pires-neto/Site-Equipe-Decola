@@ -15,8 +15,10 @@ export const Button = styled('button', {
   borderRadius: '40px',
   color: 'white',
 
-  ':hover': {
+  '&:hover': {
     cursor: 'pointer',
+    backgroundColor: '$brandBlueHover',
+    transition: '0.4s',
   },
 
   p: {
