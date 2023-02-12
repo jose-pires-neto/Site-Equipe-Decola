@@ -98,7 +98,7 @@ export function Header() {
                   <li>Início</li>
                 </Link>
                 <Link
-                  href="#about"
+                  href="/#about"
                   onClick={() => {
                     setMenuOn(!menuOn);
                   }}
@@ -106,7 +106,7 @@ export function Header() {
                   <li>Sobre</li>
                 </Link>
                 <Link
-                  href="#services"
+                  href="/#services"
                   onClick={() => {
                     setMenuOn(!menuOn);
                   }}
