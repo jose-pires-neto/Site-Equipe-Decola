@@ -28,7 +28,7 @@ export const DecolaText = styled('div', {
   },
 
   h1: {
-    fontSize: '3rem',
+    fontSize: '2.7rem',
     fontWeight: 'bold',
   },
 
@@ -44,8 +44,8 @@ export const DecolaText = styled('div', {
   },
   '@tablet': {
     img: {
-      height: '50%',
-      width: '50%',
+      height: '54%',
+      width: '54%',
     },
 
     h1: {
@@ -63,9 +63,13 @@ export const DecolaText = styled('div', {
     justifyContent: 'center',
     gap: '1rem',
 
+    h1: {
+      fontSize: '1.6rem',
+    },
+
     img: {
-      height: '70%',
-      width: '70%',
+      height: '80%',
+      width: '80%',
     },
   },
 });

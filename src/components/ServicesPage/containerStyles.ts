@@ -27,10 +27,6 @@ export const ServiceSection = styled('main', {
 
   '@largeMobile': {
     padding: '0',
-  },
-
-  '@mobile': {
-    padding: '0',
     p: {
       fontSize: '1.2rem',
     },
