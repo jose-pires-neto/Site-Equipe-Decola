@@ -7,18 +7,28 @@ export const ServicesSection = styled('section', {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '2.5rem',
-  paddingTop: '4rem',
-
-  a: {
-    textDecoration: 'none',
-    color: 'inherit',
-  },
+  paddingTop: '6rem',
 
   span: {
     color: '$brandBlue800',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     fontSize: '1rem',
     fontWeight: 'bold',
+    width: '100%',
     paddingBottom: '1rem',
+
+    hr: {
+      width: '30%',
+      height: '2px',
+      border: 'none',
+      backgroundColor: '$brandBlue800',
+    },
+  },
+  a: {
+    textDecoration: 'none',
+    color: 'inherit',
   },
 
   h2: {
