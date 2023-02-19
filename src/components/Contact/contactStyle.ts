@@ -18,6 +18,7 @@ export const ContactSection = styled('section', {
   img: {
     maxWidth: '36rem',
     maxHeight: '34rem',
+    borderRadius: '54px',
   },
 
   '@laptop': {

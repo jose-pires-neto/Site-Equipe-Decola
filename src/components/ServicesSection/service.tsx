@@ -11,7 +11,11 @@ import Link from 'next/link';
 export default function Services() {
   return (
     <ServicesSection id="services">
-      <span>SERVIÇOS</span>
+      <span>
+        <hr />
+        {`[ SERVIÇOS ]`}
+        <hr />
+      </span>
       <h2>Como podemos ajudar no seu negócio?</h2>
       <ServicesField>
         <Link href="/services/marketing">

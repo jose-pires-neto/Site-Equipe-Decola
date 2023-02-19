@@ -14,7 +14,7 @@ export function Footer() {
     <FooterContent>
       <LogoAndCopyright>
         <Image src={LogoDecola} alt="logo-equipe-decola" />
-        <p>©2022 - Equipe Decola.</p>
+        <p>©2023 - Equipe Decola.</p>
         <p>Todos os direitos reservados.</p>
       </LogoAndCopyright>
       <SocialMediaAndCNPJ>

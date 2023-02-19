@@ -3,11 +3,11 @@ import {
   ServiceContainer,
   TextAndImageContainer,
   ContentContainer,
-} from "../../components/ServicesPage/containerStyles";
-import Image from "next/image";
-import BudgetButton from "../../components/BudgetButton/budgetButton";
+} from '../../components/ServicesPage/containerStyles';
+import Image from 'next/image';
+import BudgetButton from '../../components/BudgetButton/budgetButton';
 
-import identidadeVisualImage from "../../assets/pages/identidadeVisualImage.svg";
+import identidadeVisualImage from '../../assets/pages/identidadeVisualImage.png';
 
 export default function IdentidadeVisual() {
   return (
@@ -16,7 +16,11 @@ export default function IdentidadeVisual() {
         <h1>Identidade Visual</h1>
         <hr />
         <TextAndImageContainer>
-          <Image src={identidadeVisualImage} alt="identidade-visual-image" />
+          <Image
+            src={identidadeVisualImage}
+            alt="identidade-visual-image"
+            placeholder="blur"
+          />
           <div>
             <p>
               A criação da identidade visual de uma empresa é um processo

@@ -40,6 +40,12 @@ export const ClientsField = styled('div', {
     fontSize: '2.5rem',
     padding: '1rem',
   },
+
+  '@largeMobile': {
+    h1: {
+      fontSize: '2rem',
+    },
+  },
 });
 
 export const ClientsContent = styled('div', {
@@ -48,6 +54,10 @@ export const ClientsContent = styled('div', {
   justifyContent: 'center',
   gap: '2.2rem',
   padding: '2.2rem 6rem 11rem 6rem',
+
+  '@largeMobile': {
+    padding: '2.2rem 2rem 11rem 2rem',
+  },
 });
 
 export const ClientsLogos = styled('div', {

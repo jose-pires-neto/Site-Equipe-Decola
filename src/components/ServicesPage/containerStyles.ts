@@ -27,10 +27,6 @@ export const ServiceSection = styled('main', {
 
   '@largeMobile': {
     padding: '0',
-  },
-
-  '@mobile': {
-    padding: '0',
     p: {
       fontSize: '1.2rem',
     },
@@ -97,6 +93,10 @@ export const TextAndImageContainer = styled('section', {
     display: 'flex',
     flexDirection: 'column',
     padding: '1rem 0 0 3rem',
+  },
+
+  img: {
+    borderRadius: '34px',
   },
 
   '@tablet': {

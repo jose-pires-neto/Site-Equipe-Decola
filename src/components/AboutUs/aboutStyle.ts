@@ -2,7 +2,11 @@ import { styled } from '../../styles/index';
 
 export const AboutSection = styled('section', {
   backgroundColor: '$brandBlue200',
-  padding: '1rem',
+  padding: '4rem 1rem 1rem 1rem',
+
+  '@tablet': {
+    paddingTop: '6rem',
+  },
 });
 
 export const AboutContent = styled('div', {
