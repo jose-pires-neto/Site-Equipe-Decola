@@ -16,25 +16,6 @@ export default function Hero() {
   return (
     <>
       <Carousel>
-        <style>{`
-        .swiper-button-prev {
-          color: #ffff;
-        }
-        
-        .swiper-button-next {
-          color: #ffff;
-        }
-
-        @media (max-width: 768px) {
-          .swiper-button-prev {
-            display: none;
-          }
-          
-          .swiper-button-next {
-            display: none;
-          }
-        }
-      `}</style>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
