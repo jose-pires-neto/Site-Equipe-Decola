@@ -52,16 +52,16 @@ export function Header() {
           />
         </Link>
         <Navbar isHidden={menuOn ? 'false' : 'true'}>
-          <Link href="/">
-            <li>Início</li>
+          <Link href="/" className="Link">
+            <li className="li">Início</li>
           </Link>
-          <Link href="/#about">
-            <li>Sobre</li>
+          <Link href="/#about" className="Link">
+            <li className="li">Sobre</li>
           </Link>
-          <Link href="/#services">
-            <li>Serviços</li>
+          <Link href="/#services" className="Link">
+            <li className="li">Serviços</li>
           </Link>
-          <li>Depoimentos</li>
+          <li className="li">Depoimentos</li>
         </Navbar>
         <Link href="https://api.whatsapp.com/send?phone=5591984490280">
           <Button type="button" color={scroll > 50 ? 'White' : 'BrandBlue'}>
