@@ -88,15 +88,8 @@ export const Navbar = styled('nav', {
   gap: '0 2rem',
   color: '$brandBlue800',
 
-  '.li': {
+  a: {
     fontSize: '1.2rem',
-  },
-
-  '.Link': {
-    textDecoration: 'none',
-    '&:focus, &:hover, &:visited, &:link, &:active': {
-      textDecoration: 'none',
-    },
   },
 
   '@tablet': {

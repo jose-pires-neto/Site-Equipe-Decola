@@ -19,6 +19,30 @@ import {
   ButtonMenu,
 } from './headerStyle';
 
+type LinksNavProps = {
+  name: string;
+  path: string;
+};
+
+const linksNav: LinksNavProps[] = [
+  {
+    name: 'Início',
+    path: '/',
+  },
+  {
+    name: 'Sobre',
+    path: '/#about',
+  },
+  {
+    name: 'Serviços',
+    path: '/#services',
+  },
+  {
+    name: 'Depoimentos',
+    path: '/',
+  },
+];
+
 export function Header() {
   const [scroll, setScroll] = useState(0);
   const [menuOn, setMenuOn] = useState(false);
@@ -52,22 +76,17 @@ export function Header() {
           />
         </Link>
         <Navbar isHidden={menuOn ? 'false' : 'true'}>
-          <Link href="/" className="Link">
-            <li className="li">Início</li>
-          </Link>
-          <Link href="/#about" className="Link">
-            <li className="li">Sobre</li>
-          </Link>
-          <Link href="/#services" className="Link">
-            <li className="li">Serviços</li>
-          </Link>
-          <li className="li">Depoimentos</li>
+          {linksNav.map(({ name, path }) => (
+            <li key={name}>
+              <Link href={path}>{name}</Link>
+            </li>
+          ))}
         </Navbar>
-        <Link href="https://api.whatsapp.com/send?phone=5591984490280">
-          <Button type="button" color={scroll > 50 ? 'White' : 'BrandBlue'}>
+        <Button type="button" color={scroll > 50 ? 'White' : 'BrandBlue'}>
+          <Link href="https://api.whatsapp.com/send?phone=5591984490280">
             FAÇA O SEU ORÇAMENTO
-          </Button>
-        </Link>
+          </Link>
+        </Button>
         <Menu Appearance={menuOn ? 'fullScreen' : 'hidden'}>
           <Hamburger
             onClick={() => {
