@@ -3,6 +3,10 @@ import { styled } from '../../styles/index';
 export const DecolaSection = styled('section', {
   backgroundColor: '$brandBlue300',
   padding: '6rem 4rem',
+
+  '@tablet': {
+    padding: '4rem 2rem',
+  },
 });
 
 export const DecolaContent = styled('div', {
@@ -22,6 +26,7 @@ export const DecolaText = styled('div', {
   display: 'flex',
   justifyContent: 'center',
   maxWidth: '55rem',
+  alignItems: 'center',
 
   img: {
     display: 'none',

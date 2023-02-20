@@ -74,6 +74,7 @@ export const Navbar = styled('nav', {
         gap: '3rem 0',
 
         height: '70vh',
+
         li: {
           fontSize: '1.6rem',
           fontWeight: 'bold',
@@ -86,6 +87,10 @@ export const Navbar = styled('nav', {
   listStyleType: 'none',
   gap: '0 2rem',
   color: '$brandBlue800',
+
+  a: {
+    fontSize: '1.2rem',
+  },
 
   '@tablet': {
     display: 'none',
@@ -112,8 +117,16 @@ export const Button = styled('button', {
       White: {
         borderColor: '$white',
         color: '$white',
+        '&:hover': {
+          borderColor: '$brandBlueHover',
+        },
       },
     },
+  },
+
+  '&:hover': {
+    backgroundColor: '$brandBlueHover',
+    color: '$white',
   },
 });
 

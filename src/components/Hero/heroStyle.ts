@@ -6,6 +6,16 @@ export const Carousel = styled('section', {
   height: 'auto',
   maxHeight: '54rem',
 
+  '.swiper-button-prev': {
+    color: '$white',
+    top: '42%',
+  },
+
+  '.swiper-button-next': {
+    color: '$white',
+    top: '42%',
+  },
+
   '@largeLaptop': {
     maxHeight: '42rem',
   },
@@ -16,6 +26,16 @@ export const Carousel = styled('section', {
 
   '@largeMobile': {
     height: 'auto',
+  },
+
+  '@tablet': {
+    '.swiper-button-prev': {
+      display: 'none',
+    },
+
+    '.swiper-button-next': {
+      display: 'none',
+    },
   },
 });
 
@@ -39,6 +59,9 @@ export const SlideContent = styled('div', {
     video: {
       width: '56rem',
     },
+    img: {
+      objectFit: 'cover',
+    },
   },
 
   '@largeMobile': {
@@ -51,6 +74,7 @@ export const SlideContent = styled('div', {
     img: {
       width: '32rem',
       height: '26rem',
+      objectFit: 'cover',
     },
   },
 });

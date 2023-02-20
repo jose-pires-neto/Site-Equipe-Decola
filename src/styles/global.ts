@@ -14,7 +14,7 @@ export const globalStyles = globalCss({
   },
 
   'body, input, textarea, button': {
-    fontFamily: 'DM Sans',
+    fontFamily: 'DM Sans, Orbitron',
     fontWeight: 400,
   },
 
