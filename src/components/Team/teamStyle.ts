@@ -42,6 +42,34 @@ export const CardsContainer = styled('div', {
 });
 
 export const Card = styled('div', {
+  variants: {
+    background: {
+      black: {
+        '.imageProfile': {
+          border: '8px solid #000000',
+        },
+        '&:hover': {
+          backgroundColor: '#000000',
+        },
+      },
+      green: {
+        '.imageProfile': {
+          border: '8px solid $green',
+        },
+        '&:hover': {
+          backgroundColor: '$green',
+        },
+      },
+      blue: {
+        '.imageProfile': {
+          border: '8px solid $brandBlue600',
+        },
+        '&:hover': {
+          backgroundColor: '$brandBlue600',
+        },
+      },
+    },
+  },
   backgroundColor: '$white',
   borderRadius: 18,
   display: 'flex',
@@ -49,23 +77,14 @@ export const Card = styled('div', {
   alignItems: 'center',
   height: '27.5rem',
   width: '20.625rem',
+  transition: '0.5s',
 
-  '.JPImage': {
+  '.imageProfile': {
     borderRadius: 320,
-    border: '4px solid #000000',
     margin: '2rem',
-  },
-
-  '.ClebImage': {
-    borderRadius: 320,
-    border: '4px solid $brandBlue600',
-    margin: '2rem',
-  },
-
-  '.GorehImage': {
-    borderRadius: 320,
-    border: '4px solid $green',
-    margin: '2rem',
+    width: '10rem',
+    height: 'auto',
+    transition: '0.5s',
   },
 
   h2: {
@@ -80,5 +99,29 @@ export const Card = styled('div', {
     fontSize: '1.2rem',
     fontWeight: 'bold',
     paddingTop: '0.6rem',
+  },
+  div: {
+    padding: '2rem',
+    display: 'none',
+    '.socialIcons': {
+      width: '6rem',
+      height: '3rem',
+    },
+  },
+
+  '&:hover': {
+    '.vector, h2, span': {
+      display: 'none',
+    },
+    div: {
+      display: 'block',
+    },
+    '.imageProfile': {
+      width: '100%',
+      height: 'auto',
+      border: 0,
+      borderRadius: 10,
+      margin: '0 auto',
+    },
   },
 });
