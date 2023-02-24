@@ -108,31 +108,16 @@ export function Header() {
                 height={64}
               />
               <Navbar isHidden="false">
-                <Link
-                  href="/"
-                  onClick={() => {
-                    setMenuOn(!menuOn);
-                  }}
-                >
-                  <li>Início</li>
-                </Link>
-                <Link
-                  href="/#about"
-                  onClick={() => {
-                    setMenuOn(!menuOn);
-                  }}
-                >
-                  <li>Sobre</li>
-                </Link>
-                <Link
-                  href="/#services"
-                  onClick={() => {
-                    setMenuOn(!menuOn);
-                  }}
-                >
-                  <li>Serviços</li>
-                </Link>
-                <li>Depoimentos</li>
+                {linksNav.map(({ name, path }) => (
+                  <li
+                    key={name}
+                    onClick={() => {
+                      setMenuOn(!menuOn);
+                    }}
+                  >
+                    <Link href={path}>{name}</Link>
+                  </li>
+                ))}
                 <Link
                   href="https://api.whatsapp.com/send?phone=5591984490280"
                   onClick={() => {
