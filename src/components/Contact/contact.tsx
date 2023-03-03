@@ -9,14 +9,14 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <ContactSection>
-      <ContactContent>
+      <ContactContent data-aos="zoom-in-left">
         <h2>Entre em contato com a gente!</h2>
         <div>
           <Image src={MapIcon} alt="map-icon" />
           <p>Paragominas - PA</p>
         </div>
         <div>
-          <Image src={EmailIcon} alt="map-icon" />
+          <Image src={EmailIcon} alt="email-icon" />
           <p>equipedecola.adm@gmail.com</p>
         </div>
         <Link href="https://api.whatsapp.com/send?phone=5591984490280">
@@ -26,7 +26,12 @@ export default function Contact() {
           </button>
         </Link>
       </ContactContent>
-      <Image src={ContactImage} alt="conteact-image" placeholder="blur" />
+      <Image
+        src={ContactImage}
+        alt="conteact-image"
+        placeholder="blur"
+        data-aos="zoom-in-right"
+      />
     </ContactSection>
   );
 }

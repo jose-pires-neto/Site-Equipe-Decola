@@ -19,7 +19,7 @@ export default function Services() {
       <h2>Como podemos ajudar no seu negócio?</h2>
       <ServicesField>
         <Link href="/services/marketing">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={bulb} alt="logo-bulb" height={36} />
             <h3>Consultoria de Marketing</h3>
             <p>
@@ -29,7 +29,7 @@ export default function Services() {
           </ServicesCard>
         </Link>
         <Link href="services/landing_page">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={browser} alt="logo-browser" />
             <h3>Landing Page</h3>
             <p>
@@ -40,7 +40,7 @@ export default function Services() {
           </ServicesCard>
         </Link>
         <Link href="services/criacao_de_sites">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={code} alt="logo-code" />
             <h3>Criação de sites/blog</h3>
             <p>
@@ -51,7 +51,7 @@ export default function Services() {
           </ServicesCard>
         </Link>
         <Link href="services/social_media">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={thumbsUp} alt="logo-thumbsUp" />
             <h3>Social Media</h3>
             <p>
@@ -62,7 +62,7 @@ export default function Services() {
           </ServicesCard>
         </Link>
         <Link href="services/identidade_visual">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={strategy} alt="logo-strategy" />
             <h3>Identidade Visual</h3>
             <p>
@@ -73,7 +73,7 @@ export default function Services() {
           </ServicesCard>
         </Link>
         <Link href="services/producao_de_conteudo">
-          <ServicesCard>
+          <ServicesCard data-aos="zoom-in">
             <Image src={presentation} alt="logo-presentation" />
             <h3>Produção de conteúdo</h3>
             <p>
