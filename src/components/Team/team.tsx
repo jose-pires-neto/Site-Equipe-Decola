@@ -23,7 +23,7 @@ export default function Team() {
         personalizada para atingir seus objetivos.
       </p>
       <CardsContainer>
-        <Card background={'black'} data-aos="zoom-in-right">
+        <Card background={'black'} data-aos="zoom-in-up">
           <Image src={black} alt="" className="vector" />
           <Image
             src={jp}
@@ -83,7 +83,7 @@ export default function Team() {
             </Link>
           </div>
         </Card>
-        <Card background={'green'} data-aos="zoom-in-left">
+        <Card background={'green'} data-aos="zoom-in-up">
           <Image src={vetorGreen} alt="" className="vector" />
           <Image
             src={goreh}

@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <ContactSection>
-      <ContactContent data-aos="zoom-in-left">
+      <ContactContent data-aos="zoom-in-up">
         <h2>Entre em contato com a gente!</h2>
         <div>
           <Image src={MapIcon} alt="map-icon" />
@@ -30,7 +30,7 @@ export default function Contact() {
         src={ContactImage}
         alt="conteact-image"
         placeholder="blur"
-        data-aos="zoom-in-right"
+        data-aos="zoom-in-up"
       />
     </ContactSection>
   );
