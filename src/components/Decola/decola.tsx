@@ -16,10 +16,10 @@ export default function Decola() {
   return (
     <DecolaSection>
       <DecolaContent>
-        <DecolaImage>
+        <DecolaImage data-aos="zoom-in-up">
           <Image src={cell} alt="" />
         </DecolaImage>
-        <DecolaText>
+        <DecolaText data-aos="zoom-in-up">
           <Image src={cell} alt="" />
           <h1>
             Fundada em 2022, a Equipe Decola se orgulha de oferecer soluções
@@ -27,7 +27,7 @@ export default function Decola() {
           </h1>
         </DecolaText>
         <DecolaTopcs>
-          <div>
+          <div data-aos="fade-up">
             <Image src={missionIcon} alt="Ícone de gráfico de missão" />
             <h2>Missão</h2>
             <hr className="hrMission" />
@@ -36,7 +36,7 @@ export default function Decola() {
               inovadoras que aumentem sua presença e rentabilidade no mercado.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <Image src={visionIcon} alt="Ícone de um telescópio" />
             <h2>Visão</h2>
             <hr className="hrVision" />
@@ -46,7 +46,7 @@ export default function Decola() {
               e ajudando-os a alcançar seus objetivos de negócios.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <Image src={valueIcon} alt="Ícone de uma lâmpada" />
             <h2>Valores</h2>
             <hr />

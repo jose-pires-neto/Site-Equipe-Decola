@@ -75,7 +75,7 @@ export const Navbar = styled('nav', {
 
         height: '70vh',
 
-        li: {
+        a: {
           fontSize: '1.6rem',
           fontWeight: 'bold',
         },

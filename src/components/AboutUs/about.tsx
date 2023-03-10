@@ -6,7 +6,7 @@ import AboutGraph from '../../assets/grafismoAbout.png';
 export default function About() {
   return (
     <AboutSection id="about">
-      <AboutContent>
+      <AboutContent data-aos="fade-up">
         <Image alt="about me" src={AboutGraph} className="imageContent" />
         <AboutText>
           <span>

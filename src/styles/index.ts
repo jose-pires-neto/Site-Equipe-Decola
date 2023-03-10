@@ -15,9 +15,13 @@ export const {
 
       gray700: '#212529',
       gray400: '#495057',
+      gray100: '#A0A0A0',
+
+      green: '#00BF2A',
 
       brandBlueHover: '#005E6B',
       brandBlue800: '#0090A5',
+      brandBlue600: '#5CEAFF',
       brandBlue400: '#B9F2FF',
       brandBlue300: '#DBEEFF',
       brandBlue200: '#F0F8FF',

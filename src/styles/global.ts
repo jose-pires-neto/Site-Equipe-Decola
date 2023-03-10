@@ -12,6 +12,9 @@ export const globalStyles = globalCss({
     '-moz-osx-font-smoothing': 'grayscale',
     boxSizing: 'border-box',
   },
+  html: {
+    scrollBehavior: 'smooth',
+  },
 
   'body, input, textarea, button': {
     fontFamily: 'DM Sans, Orbitron',
