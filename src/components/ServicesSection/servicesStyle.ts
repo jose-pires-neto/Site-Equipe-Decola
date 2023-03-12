@@ -72,10 +72,10 @@ export const ServicesField = styled('div', {
 
 export const ServicesCard = styled('div', {
   maxWidth: '22rem',
-  maxHeight: '13rem',
+  height: '16rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',
-  padding: '2.8rem 2rem',
+  padding: '0 2rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
