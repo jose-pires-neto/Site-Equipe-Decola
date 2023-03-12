@@ -72,16 +72,17 @@ export const ServicesField = styled('div', {
 
 export const ServicesCard = styled('div', {
   maxWidth: '22rem',
-  height: '13rem',
+  maxHeight: '13rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',
-  padding: '1.5rem',
+  padding: '2.8rem 2rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
   justifyContent: 'center',
   backgroundColor: '$white',
   transition: 'all 0.3s ease-in-out',
+
   h3: {
     marginBottom: '1rem',
     fontSize: '1.3rem',
@@ -97,7 +98,7 @@ export const ServicesCard = styled('div', {
     paddingBottom: '0.3rem',
   },
   '&:hover': {
-    transform: 'scale(1.05)',
+    // transform: 'scale(1.05) !important',
     backgroundColor: '$brandBlue200',
 
     h3: {
