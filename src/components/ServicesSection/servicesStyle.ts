@@ -75,7 +75,7 @@ export const ServicesCard = styled('div', {
   height: '16rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',
-  padding: '0 2rem',
+  padding: '1rem 2rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
