@@ -4,6 +4,10 @@ export const AboutSection = styled('section', {
   backgroundColor: '$brandBlue200',
   padding: '4rem 1rem 1rem 1rem',
 
+  a: {
+    textDecoration: 'none',
+  },
+
   button: {
     display: 'none',
     width: '18rem',

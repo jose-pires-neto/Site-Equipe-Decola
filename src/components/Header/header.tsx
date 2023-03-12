@@ -83,7 +83,10 @@ export function Header() {
           ))}
         </Navbar>
         <Button type="button" color={scroll > 50 ? 'White' : 'BrandBlue'}>
-          <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+          <Link
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5591984490280"
+          >
             FAÇA O SEU ORÇAMENTO
           </Link>
         </Button>
@@ -120,6 +123,7 @@ export function Header() {
                 ))}
                 <Link
                   href="https://api.whatsapp.com/send?phone=5591984490280"
+                  target="_blank"
                   onClick={() => {
                     setMenuOn(!menuOn);
                   }}
