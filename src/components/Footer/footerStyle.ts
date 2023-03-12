@@ -12,17 +12,16 @@ export const FooterContent = styled('footer', {
     padding: '0.4rem 0',
   },
 
-  '@mobile': {
+  '@largeMobile': {
     flexDirection: 'column',
-    height: '16rem',
+    height: '20rem',
+    justifyContent: 'center',
     alignItems: 'flex-start',
     padding: '0.5rem 0.3rem',
   },
 
-  '@largeMobile': {
-    flexDirection: 'column',
-    height: '20rem',
-    alignItems: 'flex-start',
+  '@mobile': {
+    height: '16rem',
     padding: '0.5rem 0.3rem',
   },
 
@@ -40,6 +39,14 @@ export const LogoAndCopyright = styled('div', {
     width: '11rem',
     height: '5rem',
   },
+
+  '@largeMobile': {
+    paddingLeft: '1.8rem',
+  },
+
+  '@mobile': {
+    paddingLeft: '1rem',
+  },
 });
 
 export const SocialMediaAndCNPJ = styled('div', {
@@ -47,10 +54,21 @@ export const SocialMediaAndCNPJ = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   paddingTop: '0.8rem',
+
   div: {
     display: 'flex',
     padding: '0 0.8rem',
     justifyContent: 'space-between',
     width: '100%',
+  },
+
+  '@largeMobile': {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+
+    div: {
+      width: '38%',
+    },
   },
 });

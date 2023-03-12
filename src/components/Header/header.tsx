@@ -37,10 +37,10 @@ const linksNav: LinksNavProps[] = [
     name: 'Serviços',
     path: '/#services',
   },
-  {
-    name: 'Depoimentos',
-    path: '/',
-  },
+  // {
+  //   name: 'Depoimentos',
+  //   path: '/',
+  // },
 ];
 
 export function Header() {
@@ -127,9 +127,24 @@ export function Header() {
                   <ButtonMenu>FAÇA O SEU ORÇAMENTO</ButtonMenu>
                 </Link>
                 <Footer>
-                  <Image src={instagramIcon} alt="Instagram Icon" />
-                  <Image src={facebookIcon} alt="Facebook Icon" />
-                  <Image src={youtubeIcon} alt="Youtube Icon" />
+                  <Link
+                    href="https://www.instagram.com/equipedecola/"
+                    target="_blank"
+                  >
+                    <Image src={instagramIcon} alt="Instagram Icon" />
+                  </Link>
+                  <Link
+                    href="https://www.facebook.com/profile.php?id=100088935826965"
+                    target="_blank"
+                  >
+                    <Image src={facebookIcon} alt="Facebook Icon" />
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/channel/UCibK4kbYrAKj91roWYkOJug"
+                    target="_blank"
+                  >
+                    <Image src={youtubeIcon} alt="Youtube Icon" />
+                  </Link>
                 </Footer>
               </Navbar>
             </>
