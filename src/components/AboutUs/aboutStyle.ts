@@ -4,8 +4,40 @@ export const AboutSection = styled('section', {
   backgroundColor: '$brandBlue200',
   padding: '4rem 1rem 1rem 1rem',
 
+  button: {
+    display: 'none',
+    width: '18rem',
+    height: '3.5rem',
+    margin: '0 auto',
+    marginBottom: '2rem',
+    padding: '0.5rem',
+    borderRadius: '40px',
+    border: 'none',
+    color: 'white',
+    backgroundColor: '$brandBlue800',
+    fontSize: '1.2rem',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: '$brandBlueHover',
+      transition: '0.4s',
+    },
+
+    img: {
+      width: '1.6rem',
+      height: '1.6rem',
+    },
+  },
+
   '@tablet': {
-    paddingTop: '6rem',
+    paddingTop: '1rem',
+
+    button: {
+      display: 'flex',
+    },
   },
 });
 

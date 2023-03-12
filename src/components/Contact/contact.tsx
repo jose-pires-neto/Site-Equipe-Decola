@@ -28,9 +28,10 @@ export default function Contact() {
       </ContactContent>
       <Image
         src={ContactImage}
-        alt="conteact-image"
+        alt="contact-image"
         placeholder="blur"
         data-aos="zoom-in-up"
+        className="contact-image"
       />
     </ContactSection>
   );

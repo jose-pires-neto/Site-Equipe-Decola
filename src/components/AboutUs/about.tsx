@@ -3,9 +3,14 @@ import Image from 'next/image';
 
 import AboutGraph from '../../assets/grafismoAbout.png';
 
+import whatsAppIcon from '../../assets/icons/whatsIcon.svg';
 export default function About() {
   return (
     <AboutSection id="about">
+      <button>
+        <Image src={whatsAppIcon} alt="Ícone do Whatsapp" />
+        Faça seu orçamento
+      </button>
       <AboutContent data-aos="fade-up">
         <Image alt="about me" src={AboutGraph} className="imageContent" />
         <AboutText>

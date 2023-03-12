@@ -41,11 +41,11 @@ export const LogoAndCopyright = styled('div', {
   },
 
   '@largeMobile': {
-    paddingLeft: '1.8rem',
+    paddingLeft: '1rem',
   },
 
   '@mobile': {
-    paddingLeft: '1rem',
+    paddingLeft: '0.4rem',
   },
 });
 
@@ -69,6 +69,7 @@ export const SocialMediaAndCNPJ = styled('div', {
 
     div: {
       width: '38%',
+      padding: '0',
     },
   },
 });
