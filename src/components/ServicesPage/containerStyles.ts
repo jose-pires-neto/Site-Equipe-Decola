@@ -96,7 +96,7 @@ export const TextAndImageContainer = styled('section', {
   },
 
   img: {
-    borderRadius: '34px',
+    borderRadius: '10px',
   },
 
   '@tablet': {
