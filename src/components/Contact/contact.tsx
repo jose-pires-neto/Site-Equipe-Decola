@@ -19,7 +19,10 @@ export default function Contact() {
           <Image src={EmailIcon} alt="email-icon" />
           <p>equipedecola.adm@gmail.com</p>
         </div>
-        <Link href="https://api.whatsapp.com/send?phone=5591984490280">
+        <Link
+          href="https://api.whatsapp.com/send?phone=5591984490280"
+          target="_blank"
+        >
           <button type="button">
             <Image src={WhatsIcon} alt="whats-icon" />
             Faça o seu orçamento
