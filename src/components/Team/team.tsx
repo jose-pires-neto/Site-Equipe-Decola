@@ -51,7 +51,7 @@ const cards: CardProps[] = [
     vector: vetorGreen,
     imageProfile: adriano,
     description: 'Foto do desenvolvedor Back-end',
-    name: 'Adriano Santos',
+    name: 'Adriano Rodrigues',
     role: 'Back-end Developer',
     linkedinUrl: 'https://www.linkedin.com/in/adriano-rdg/',
     githubUrl: 'https://github.com/AdrianoRdg',
