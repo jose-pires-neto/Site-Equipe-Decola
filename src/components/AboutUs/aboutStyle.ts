@@ -13,7 +13,7 @@ export const AboutSection = styled('section', {
     width: '18rem',
     height: '3.5rem',
     margin: '0 auto',
-    marginBottom: '2rem',
+    marginBottom: '1rem',
     padding: '0.5rem',
     borderRadius: '40px',
     border: 'none',
@@ -37,7 +37,7 @@ export const AboutSection = styled('section', {
   },
 
   '@tablet': {
-    paddingTop: '1rem',
+    paddingTop: '0',
 
     button: {
       display: 'flex',

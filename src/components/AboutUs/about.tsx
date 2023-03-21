@@ -18,7 +18,7 @@ export default function About() {
           Faça seu orçamento
         </button>
       </Link>
-      <AboutContent data-aos="fade-up">
+      <AboutContent data-aos="fade-up" data-aos-offset="50">
         <Image alt="about me" src={AboutGraph} className="imageContent" />
         <AboutText>
           <span>
