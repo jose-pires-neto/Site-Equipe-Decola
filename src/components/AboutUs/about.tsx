@@ -10,6 +10,7 @@ export default function About() {
   return (
     <AboutSection id="about">
       <Link
+        data-aos="fade-up"
         href="https://api.whatsapp.com/send?phone=5591984490280"
         target="_blank"
       >
@@ -18,7 +19,11 @@ export default function About() {
           Faça seu orçamento
         </button>
       </Link>
-      <AboutContent data-aos="fade-up" data-aos-offset="50">
+      <AboutContent
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="100"
+      >
         <Image alt="about me" src={AboutGraph} className="imageContent" />
         <AboutText>
           <span>
