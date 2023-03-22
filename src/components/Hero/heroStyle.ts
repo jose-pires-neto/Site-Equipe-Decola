@@ -25,7 +25,7 @@ export const Carousel = styled('section', {
   },
 
   '@largeMobile': {
-    height: 'auto',
+    height: '28rem',
   },
 
   '@tablet': {
