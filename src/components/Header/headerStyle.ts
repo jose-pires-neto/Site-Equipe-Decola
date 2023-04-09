@@ -48,6 +48,7 @@ export const HeaderStyle = styled('header', {
       },
     },
   },
+  transition: 'all 0.3s ease-in-out',
 });
 
 export const Container = styled('div', {
