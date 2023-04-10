@@ -64,6 +64,23 @@ export const ContactContent = styled('div', {
   height: '19rem',
   padding: '1.5rem 0',
 
+  span: {
+    color: '$brandBlue800',
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    width: '100%',
+    paddingBottom: '1rem',
+
+    hr: {
+      width: '80%',
+      height: '2px',
+      border: 'none',
+      backgroundColor: '$brandBlue800',
+    },
+  },
+
   h2: {
     fontSize: '2.6rem',
     textAlign: 'left',

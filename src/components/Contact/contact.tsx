@@ -10,6 +10,10 @@ export default function Contact() {
   return (
     <ContactSection>
       <ContactContent data-aos="zoom-in-up">
+        <span>
+          {`CONTATO ]`}
+          <hr />
+        </span>
         <h2>Entre em contato com a gente!</h2>
         <div>
           <Image src={MapIcon} alt="map-icon" />
