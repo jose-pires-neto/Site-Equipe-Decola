@@ -24,14 +24,26 @@ export default function About() {
         data-aos-offset="50"
         data-aos-delay="100"
       >
-        <Image alt="about me" src={AboutGraph} className="imageContent" />
+        <Image
+          alt="about me"
+          src={AboutGraph}
+          className="imageContent"
+          placeholder="blur"
+          blurDataURL="../../assets/grafismoAbout.png"
+        />
         <AboutText>
           <span>
             {`SOBRE NÓS ]`}
             <hr />
           </span>
           <h2>Venha fazer o seu negócio decolar conosco!</h2>
-          <Image alt="about me" src={AboutGraph} className="imageText" />
+          <Image
+            alt="about me"
+            src={AboutGraph}
+            className="imageText"
+            placeholder="blur"
+            blurDataURL="../../assets/grafismoAbout.png"
+          />
           <p>
             A Equipe Decola é uma empresa especializada em serviços de
             marketing, melhorando os resultados dos negócios com planos e
