@@ -73,6 +73,8 @@ export function Header() {
             alt="Logo da Equipe Decola"
             width={160}
             height={64}
+            quality={75}
+            priority
           />
         </Link>
         <Navbar isHidden={menuOn ? 'false' : 'true'}>

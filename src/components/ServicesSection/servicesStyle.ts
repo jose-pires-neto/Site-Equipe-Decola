@@ -82,6 +82,7 @@ export const ServicesCard = styled('div', {
   justifyContent: 'center',
   backgroundColor: '$white',
   transition: 'all 0.3s ease-in-out',
+  overflow: 'hidden',
 
   h3: {
     marginBottom: '1rem',
@@ -97,6 +98,16 @@ export const ServicesCard = styled('div', {
     marginBottom: '0.5rem',
     paddingBottom: '0.3rem',
   },
+  span: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginTop: '1.4rem',
+    transform: 'translateY(110%)',
+    opacity: 0,
+    transition: 'all 0.3s ease-in-out',
+  },
+
   '&:hover': {
     // transform: 'scale(1.05) !important',
     backgroundColor: '$brandBlue200',
@@ -106,6 +117,10 @@ export const ServicesCard = styled('div', {
     },
     p: {
       color: '$brandBlue800',
+    },
+    span: {
+      transform: 'translateY(0%)',
+      opacity: 1,
     },
   },
 
