@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <ContactSection>
-      <ContactContent data-aos="zoom-in-up">
+      <ContactContent /*data-aos="zoom-in-up"*/>
         <span>
           {`CONTATO ]`}
           <hr />
@@ -37,7 +37,7 @@ export default function Contact() {
         src={ContactImage}
         alt="contact-image"
         placeholder="blur"
-        data-aos="zoom-in-up"
+        // data-aos="zoom-in-up"
         className="contact-image"
       />
     </ContactSection>
