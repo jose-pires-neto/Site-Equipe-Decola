@@ -49,8 +49,6 @@ export const ServicesSection = styled('section', {
     h2: {
       fontSize: '2rem',
     },
-
-    overflowY: 'hidden',
   },
 
   '@largeMobile': {
@@ -68,11 +66,15 @@ export const ServicesField = styled('div', {
   gap: '2.5rem 2rem',
   marginTop: '3rem',
   marginBottom: '2rem',
+
+  '@largeLaptop': {
+    maxWidth: '100vw',
+  },
 });
 
 export const ServicesCard = styled('div', {
   maxWidth: '22rem',
-  height: '16rem',
+  height: '18rem',
   border: '1px solid $brandBlue400',
   borderRadius: '0.375rem',
   padding: '1rem 2rem',
@@ -125,11 +127,18 @@ export const ServicesCard = styled('div', {
   },
 
   '@laptop': {
-    maxWidth: '18rem',
+    maxWidth: '20rem',
+    height: '18rem',
+  },
+
+  '@largeMobile': {
+    width: '17rem',
+    height: '20rem',
   },
 
   '@mobile': {
-    width: '16rem',
+    height: '17rem',
+
     h3: {
       fontSize: '1rem',
     },
