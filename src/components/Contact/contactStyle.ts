@@ -70,11 +70,11 @@ export const ContactContent = styled('div', {
     alignItems: 'center',
     fontSize: '1rem',
     fontWeight: 'bold',
-    width: '100%',
+    width: '91%',
     paddingBottom: '1rem',
 
     hr: {
-      width: '72%',
+      width: '71%',
       height: '2px',
       border: 'none',
       backgroundColor: '$brandBlue800',

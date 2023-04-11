@@ -104,10 +104,17 @@ export const ServicesCard = styled('div', {
     width: '100%',
     display: 'flex',
     justifyContent: 'flex-end',
+    alignItems: 'center',
     marginTop: '1.4rem',
     transform: 'translateY(110%)',
     opacity: 0,
     transition: 'all 0.3s ease-in-out',
+
+    img: {
+      margin: 0,
+      padding: 0,
+      paddingLeft: '5px',
+    },
   },
 
   '&:hover': {
