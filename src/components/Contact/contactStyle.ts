@@ -38,7 +38,7 @@ export const ContactSection = styled('section', {
   },
 
   '@tablet': {
-    flexDirection: 'column-reverse',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     img: {
@@ -60,7 +60,7 @@ export const ContactContent = styled('div', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'left',
-  width: '35rem',
+  maxWidth: '35rem',
   height: '19rem',
   padding: '1.5rem 0',
 
@@ -70,11 +70,11 @@ export const ContactContent = styled('div', {
     alignItems: 'center',
     fontSize: '1rem',
     fontWeight: 'bold',
-    width: '100%',
+    width: '91%',
     paddingBottom: '1rem',
 
     hr: {
-      width: '80%',
+      width: '71%',
       height: '2px',
       border: 'none',
       backgroundColor: '$brandBlue800',
