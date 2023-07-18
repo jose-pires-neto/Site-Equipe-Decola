@@ -34,6 +34,7 @@ export const globalStyles = globalCss({
     position: 'fixed',
     bottom: '40px',
     right: '40px',
+    zIndex: 80,
   },
 
   '.buttonChat': {
