@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "@stitches/react": "^1.2.8",
     "@types/aos": "^3.0.4",
     "@types/node": "18.11.15",

@@ -13,6 +13,7 @@ export const AboutSection = styled('section', {
     width: '18rem',
     height: '3.5rem',
     margin: '0 auto',
+    marginTop: '1rem',
     marginBottom: '1rem',
     padding: '0.5rem',
     borderRadius: '40px',
