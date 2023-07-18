@@ -26,4 +26,37 @@ export const globalStyles = globalCss({
       overflowY: 'hidden',
     },
   },
+
+  '.chatPopover': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'end',
+    position: 'fixed',
+    bottom: '40px',
+    right: '40px',
+  },
+
+  '.buttonChat': {
+    alignItems: 'center',
+    backgroundColor: '$brandBlue800',
+    border: 'none',
+    borderRadius: '50%',
+    display: 'flex',
+    height: '3.5rem',
+    paddingLeft: '0.75rem',
+    paddingRight: '0.75rem',
+    overflow: 'hidden',
+    maxWidth: '3.4rem',
+    transition: 'all 0.3s linear',
+
+    img: {
+      width: '2rem',
+      height: '2rem',
+    },
+
+    '&:hover': {
+      maxWidth: '8rem',
+      borderRadius: '10rem',
+    },
+  },
 });
